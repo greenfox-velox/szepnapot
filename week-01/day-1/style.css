@@ -1,0 +1,43 @@
+* {
+  font-family: 'Merriweather', serif;
+}
+
+.article-title {
+  padding-top: 50px;
+}
+
+div.main {
+  margin: 0 27.5% 0 27.5%;
+}
+div.article-title h1 {
+  font-weight: bold;
+  color:black;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+div.article-subtitle h2 {
+  margin-top: 0;
+  padding-top: 0;
+  color:grey;
+  font-weight: 300;
+}
+
+p {
+  padding-top: 20px;
+}
+
+.intro {
+   font-style: italic;
+   font-weight: 400;
+   padding-bottom: 30px;
+}
+
+.question {
+  padding: 20px 0 20px 0;
+  font-weight: 300 bold;
+}
+
+.answer {
+  font-weight: 300;
+}
