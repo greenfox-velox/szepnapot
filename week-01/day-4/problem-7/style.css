@@ -1,0 +1,36 @@
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.top {
+  width: 310px;
+  height: auto;
+  padding: 20px 20px;
+  border-left: black solid 3px;
+  border-right: black solid 3px;
+  border-top: 0;
+  border-bottom: black solid 3px;
+}
+
+div {
+  width: 310px;
+  height: auto;
+  padding: 20px 20px;
+  border-bottom: black solid 3px;
+  border-left: black solid 3px;
+  border-right: black solid 3px;
+}
+
+.bottom {
+  width: 310px;
+  height: auto;
+  padding: 20px 20px;
+  border-left: black solid 3px;
+  border-right: black solid 3px;
+  border-top: 0;
+  border-bottom: 0;
+}
