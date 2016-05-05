@@ -1,0 +1,12 @@
+h1,h2 {
+  color:green;
+}
+
+p span {
+  color: red;
+}
+
+em {
+  color: blue;
+  font-style: italic;
+}
