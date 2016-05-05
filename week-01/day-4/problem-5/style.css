@@ -1,0 +1,20 @@
+h1 {
+  color:blue;
+}
+
+h2 {
+  color: gold;
+}
+
+.category {
+  color: blue;
+  list-style-type: square;
+}
+
+span {
+  color: red;
+}
+
+.fruits {
+  list-style-type: disc;
+}
