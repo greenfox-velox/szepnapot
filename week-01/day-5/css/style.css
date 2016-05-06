@@ -1,0 +1,36 @@
+
+header {
+  background: url(../img/anakin.png) no-repeat center/80%;
+  background-size: cover;
+  padding: 0px;
+  height: 400px;
+  width: 1280px;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  color: #222;
+  margin: 0px;
+  padding-top: 250px;
+  padding-left: 200px;
+
+}
+
+header span {
+  font-size: 1.7em;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+  padding-left: 150px;
+}
+
+.main {
+  max-width: 800px;
+  padding-left: 240px;
+  padding-right: 240px;
+}
