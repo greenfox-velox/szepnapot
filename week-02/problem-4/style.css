@@ -1,0 +1,94 @@
+body {
+  box-sizing: border-box;
+  max-width: 550px;
+  margin: 35px 20px;
+}
+
+.prompt {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 236px;
+  height: 154px;
+  z-index: 1;
+  background: white;
+  top: 40px;
+  left: 150px;
+}
+
+.prompt p {
+  margin: 0;
+  padding-left: 20px;
+}
+
+span {
+  float: right;
+  color:white;
+  border: 1px solid black;
+  background: black;
+  border-radius: 100px;
+  padding: 2px 6px;
+  margin-top: -22px;
+  margin-right: 20px;
+}
+
+.prompt p:first-child {
+  margin: 10px 0px;
+  color: red;
+}
+
+.prompt p:nth-child(2) {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin: 10px 20px 10px auto;
+
+}
+
+.ok {
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: grey;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.cancel {
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: grey;
+  padding: 5px;
+}
+
+p:first-child{
+  position: relative;
+}
+
+img {
+  width: 95px;
+  float: left;
+  margin: 20px;
+}
+
+img {
+  float:left;
+}
+
+.duck {
+  float: right;
+}
+
+hr {
+  height: 1px;
+  background: black;
+  border: 1px solid black;
+}
