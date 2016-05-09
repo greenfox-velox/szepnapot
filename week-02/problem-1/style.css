@@ -1,0 +1,26 @@
+body {
+  box-sizing: border-box;
+  max-width: 400px;
+  border: 1px solid black;
+  padding: 50px;
+}
+
+img {
+  width: 95px;
+  float: left;
+  margin: 20px;
+}
+
+img {
+  float:left;
+}
+
+.duck {
+  float: right;
+}
+
+hr {
+  height: 1px;
+  background: black;
+  border: 1px solid black;
+}
