@@ -1,7 +1,28 @@
-# szepnapot
-Peter Lodri
-2016.05.04
 
-[syllabus fork](https://github.com/szepnapot/velox-syllabus "fork")
+# GreenFox Academy
+## Velox class 
 
-[CV html](https://szepnapot.github.io "CV page")
+### Current + done project list
+
+**[syllabus fork]**(https://github.com/szepnapot/velox-syllabus "fork")
+
+
+### Week 1:
+
+*Project: Build a CV page*
+
+[CV html - for GFA apply](https://szepnapot.github.io "CV page")
+[CV Anakin template](https://szepnapot.github.io/anakin "Anakin CV")
+
+
+### Week 2:
+
+*Project: Build two WIkipedia Pages*
+
+**[week syllabus]**(https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02)
+
+[Day 1:](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02/1-layout "Syllabus")
+
+
+
+
