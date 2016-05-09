@@ -4,7 +4,7 @@
 
 ### Current + done project list
 
-[**syllabus fork**](https://github.com/szepnapot/velox-syllabus "fork")
+[**syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
 
 
 ### Week 1:

@@ -1,0 +1,29 @@
+header {
+  height: 80px;
+  background: cyan;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  min-height: 100%;
+}
+
+.left {
+  width: 170px;
+  background: gold;
+}
+
+.content {
+  position: relative;
+  flex-grow: 3;
+  background: green;
+  float: right;
+}
+
+.bio {
+  margin-top: 140px;
+  width: 270px;
+  height: 520px;
+  background: orangered;
+}
