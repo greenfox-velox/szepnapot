@@ -6,29 +6,23 @@ h1 {
   font-weight: bold;
 }
 
-.top {
-  background: url(duck.png) no-repeat left center;
+div {
   width: 200px;
   height: auto;
   padding: 40px 40px;
   border: black solid 3px;
   margin-bottom: 20px;
+}
+
+.top {
+  background: url(duck.png) no-repeat left center;
+
 }
 
 .mid {
   background: url(duck.png) no-repeat center;
-  width: 200px;
-  height: auto;
-  padding: 40px 40px;
-  border: black solid 3px;
-  margin-bottom: 20px;
 }
 
 .bot {
   background: url(duck.png) no-repeat right bottom;
-  width: 200px;
-  height: auto;
-  padding: 40px 40px;
-  border: black solid 3px;
-  margin-bottom: 20px;
 }
