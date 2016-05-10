@@ -1,0 +1,11 @@
+body {
+  box-sizing: border-box;
+  padding: 50px 100px;
+  background: #DCD6CD;
+  color: #5D566F;
+}
+
+.wrapper {
+  display: flex;
+
+}
