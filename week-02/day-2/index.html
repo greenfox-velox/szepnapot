@@ -107,8 +107,9 @@
     </div>
 
     <div class="cv">
-      <label for="upload">CV feltöltése</label>
-      <input type="file" id="upload" accept="document/*"/>
+      <label for="button">CV feltöltése</label>
+      <input type="file" id="selectedFile" style="display: none;" />
+      <input type="button" value="FILE KIVÁLASZTÁSA" onclick="document.getElementById('selectedFile').click();" />
     </div>
 
     <div class="eula">

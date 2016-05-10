@@ -148,9 +148,6 @@ textarea + placeholder{
   margin-top: 20px;
 }
 
-.cv > label {
-  margin-bottom: 5px;
-}
 
 .eula {
   display: flex;
