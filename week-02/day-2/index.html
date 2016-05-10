@@ -6,60 +6,76 @@
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body>
-    <p>Profil<p>
     <div class="wrapper">
       <div class="personal">
-        <p>Személyes adatok</p>
+        <p class="title">Személyes adatok</p>
 
         <label for="name">Név</label>
         <input type="text" id="name" required>
 
-        <label for="birth"> Születési éved</label>
-        <input type="" id="birth" placeholder="pl. 1984">
+          <div class="year">
+            <label for="birth"> Születési éved</label>
+            <input type="" id="birth" placeholder="pl. 1984">
+          </div>
 
-        <label for="gender">Nemed</label>
-        <input type="radio" id="gender ffi">
-        <input type="radio" id="gender no">
+          <div class="nem">
+            <label for="gender">Nemed</label>
+            <input type="radio" id="gender ffi"><span>férfi</span>
+            <input type="radio" id="gender no"><span>nő</span>
+          </div>
 
-        <p>Milyen márkákat szeretsz?</p>
-        <label for="marka">Adidas</label>
-        <input type="checkbox" id="marka">
+        <div class="brand">
+          <p>Milyen márkákat szeretsz?</p>
 
-        <label for="marka">Apple</label>
-        <input type="checkbox" id="marka">
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Adidas</label>
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Apple</label>
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Coca-Cola</label>
 
-        <label for="marka">Coca-Cola</label>
-        <input type="checkbox" id="marka">
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Mazda</label>
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Nike</label>
 
-        <label for="marka">Mazda</label>
-        <input type="checkbox" id="marka">
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Opel</label>
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Ray-Ban</label>
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Starbucks</label>
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Tesla</label>
+          </div>
+          <div>
+          <input type="checkbox" id="marka">
+          <label for="marka">Yahoo</label>
+          </div>
+        </div>
 
-        <label for="marka">Nike</label>
-        <input type="checkbox" id="marka">
-
-        <label for="marka">Opel</label>
-        <input type="checkbox" id="marka">
-
-        <label for="marka">Ray-Ban</label>
-        <input type="checkbox" id="marka">
-
-        <label for="marka">Starbucks</label>
-        <input type="checkbox" id="marka">
-
-        <label for="marka">Tesla</label>
-        <input type="checkbox" id="marka">
-
-        <label for="marka">Adidas</label>
-        <input type="checkbox" id="marka">
-
-        <label for="marka">Yahoo</label>
-        <input type="checkbox" id="marka">
-
-        <p>Többet is választhatsz!</p>
+        <p class="warn">Többet is választhatsz!</p>
 
       </div>
       <div class="contact">
-        <p>Kapcsolat</p>
+        <p class="title">Kapcsolat</p>
 
         <label for="phone">Telefonszám</label>
         <input type="tel" id="phone" required placeholder="+36 -- --- ----">
@@ -74,19 +90,20 @@
         <input type="text" id="twit" placeholder="http://twitter.com/..">
 
         <label for="home">Milyen házban laksz?</label>
-        <select name="home" placeholder="Válassz típust!">
-          <option value="haz">Ház</option>
-          <option value="albi">Albérlet</option>
-          <option value="tömb">Tömblakás</option>
-        </select>
+        <div class="live">
+          <select name="home">
+            <option value="" disabled selected hidden>Válassz típust!</option>
+            <option value="haz">Ház</option>
+            <option value="albi">Albérlet</option>
+            <option value="tömb">Tömblakás</option>
+          </select>
+        </div>
 
       </div>
 
-    </div>
-
     <div class="bio">
       <label for="intro">Bemutatkozás</label>
-      <textarea id="intro">Írj magadról pár mondatot!"</textarea>
+      <textarea id="intro" placeholder="Írj magadról pár mondatot!"></textarea>
     </div>
 
     <div class="cv">
@@ -94,14 +111,20 @@
       <input type="file" id="upload" accept="document/*"/>
     </div>
 
-    <label for="eula">Elfogadom a felhasználási feltételeket</label>
+    <div class="eula">
     <input type="checkbox" id="eula" required>
+    <label>Elfogadom a <a href="#">felhasználási feltételeket</a></label>
+    </div>
 
+    <footer>
     <div class="save">
       <p>Mentés</p>
     </div>
-    <div class="save">
+    <div class="delete">
       <p>Űrlap törlése</p>
     </div>
+    </footer>
+</div>
+  </div>
   </body>
 </html>

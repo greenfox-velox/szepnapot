@@ -1,11 +1,194 @@
-body {
+* {
   box-sizing: border-box;
-  padding: 50px 100px;
-  background: #DCD6CD;
+  font-family: Helvetica;
+}
+
+body {
+  margin: 0 auto;
   color: #5D566F;
 }
 
 .wrapper {
   display: flex;
+  padding: 50px 100px;
+  background: #DCD6CD;
+  width: 820px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
 
+.personal {
+  margin-right: 20px;
+}
+
+.personal, .contact {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-content: flex-start
+}
+
+.warn {
+  margin: 40px 0 20px 0;
+  color: gray;
+  font-size: 12px;
+}
+
+.title{
+  border-radius: 3px;
+  margin: 0 0 15px 0;
+  width: 300px;
+  height: 40px;
+  background: #5D566F;
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.personal p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.personal p:nth-of-type(2) {
+  font-weight: lighter;
+}
+
+label {
+  font-weight: bold;
+  width: 300px;
+  max-height: 30px;
+}
+
+
+input {
+  display: block;
+  width: 300px;
+  height: 35px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+
+.year, .nem {
+  width: 50%;
+}
+
+.nem > label {
+  display: block;
+  padding-top: 0;
+  width: 30px;
+}
+
+.nem > input {
+  display: inline;
+  width: 20px;
+  height: 15px;
+  margin: 10px 0;
+}
+
+.year > input {
+  width: 70px;
+}
+
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  width: 310px;
+}
+
+label[for="marka"] {
+  margin-top: 19px;
+  font-weight: 500;
+  width: auto;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-left: 0;
+}
+.brand > p {
+  margin-bottom: 0px;
+}
+
+.brand > div {
+  display: inherit;
+  width: 150px;
+  height: 25px;
+}
+
+select:invalid {
+  background: white;
+  color: gray;
+}
+
+select {
+  width: 300px;
+  height: 30px;
+}
+
+.bio, .cv, .eula {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+textarea {
+  border-radius: 3px;
+  width: 620px;
+  height: 160px;
+}
+
+textarea + placeholder{
+  color: grey;
+}
+
+.cv {
+  margin-top: 20px;
+}
+
+.cv > label {
+  margin-bottom: 5px;
+}
+
+.eula {
+  display: flex;
+  flex-direction: row;
+}
+
+.eula > label {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.eula > label, .eula > input {
+  font-weight: normal;
+  padding: 0;
+}
+
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save {
+  border-radius: 3px;
+  background: #5D566F;
+  color: white;
+  text-align: center;
+  height: 45px;
+  width: 220px;
+}
+
+.delete {
+  border-radius: 3px;
+  background: white;
+  text-align: center;
+  height: 45px;
+  width: 160px;
+  justify-content: flex-end;
 }
