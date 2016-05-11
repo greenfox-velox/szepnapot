@@ -1,29 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
 header {
-  height: 80px;
-  background: cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 80px;
+    background: aqua;
+    margin: 0px;
 }
 
-.wrapper {
-  display: flex;
-  flex-flow: row;
-  min-height: 100%;
+.account {
+    width: 505px;
+    height: 20px;
+    background: black;
 }
 
-.left {
-  width: 170px;
-  background: gold;
+.search {
+    width: 300px;
+    height: 35px;
+    background: moccasin;
 }
 
-.content {
-  position: relative;
-  flex-grow: 3;
-  background: green;
-  float: right;
+aside {
+    min-width: 168px;
+    height: 1000px;
+    background: gold;
 }
 
-.bio {
-  margin-top: 140px;
-  width: 270px;
-  height: 520px;
-  background: orangered;
+
+main {
+    display: flex;
+    width: 100%;
+    height: 666px;
+}
+
+.right-side {
+    width: 100%;
+}
+
+article {
+    width: 100%;
+    height: 666px;
+    background: #FF4500;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.slogen {
+    height: 20px;
+    background: green;
+}
+
+.hatnote {
+    height: 22px;
+    background: orange;
+}
+
+.infobox {
+    display: block;
+    width: 270px;
+    height: 520px;
+    float: right;
+    background: khaki;
+}
+
+.navbox {
+    width: 100%;
+    height: 320px;
+    background: deepskyblue;
+}
+
+.catlinks {
+    width: 100%;
+    height: 60px;
+    background: cadetblue;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: #9ACD32;
 }
