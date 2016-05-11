@@ -22,7 +22,7 @@
 
 Syllabus | Solution 
 -------- | --------
-[**week 2 offical**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02)
+[**week 2 offical**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02) | 
 
 [Day 1 tasks](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02/1-layout "Syllabus") | [Week 2/Day 1](https://github.com/greenfox-velox/szepnapot/tree/master/week-02/day-1)
 [Day 2 tasks](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02/2-forms) | [Week 2/Day 2](https://github.com/greenfox-velox/szepnapot/tree/master/week-02/day-2)
