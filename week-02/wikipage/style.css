@@ -161,6 +161,12 @@ aside {
     border-bottom: 1px solid grey;
 }
 
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
 main {
     display: flex;
     width: 100%;
@@ -179,19 +185,59 @@ article {
 }
 
 h1 {
-    margin: 0px;
+    font-size: 1.8em;
+    overflow: visible;
+    line-height: 1.3em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    border-bottom: 1px solid #aaa;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    line-height: 1.3;
+    margin-bottom: 0.25em;
+    padding: 0;
+    border-bottom: 1px solid #aaa;
+    overflow: hidden;
+}
+
+h3 {
+    overflow: hidden;
+    margin: 0;
+    padding-top: .5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.edit {
+    font-size: small;
+    font-weight: normal;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 1em;
 }
 
 .slogen {
     height: 20px;
+    line-height: 1.6em;
+    font-size: 92%;
 }
 
 .hatnote {
     height: 22px;
+    padding-left: 1.6em;
+    margin-bottom: 0.5em;
+    font-style: italic;
+    font-size: 0.875em;
+    line-height: 1.6em;
 }
 
 .contentbox {
     display: flex;
+    flex-direction: column;
     max-width: 120px;
     height: 262px;
     background: #f9f9f9;
@@ -202,12 +248,14 @@ h1 {
 }
 
 .contentbox_title {
-    margin: 10px 0;
+    margin: 0;
 }
 
-.contentbox_list {
+.contentbox_list, .contentbox_list > ul {
+    text-align: left;
+    list-style: none;
     padding: 0;
-    margin: 5px 0;
+    margin: 0.3em 0;
 }
 
 .contentbox_list > li {
@@ -220,9 +268,13 @@ h1 {
     max-width: 270px;
     height: 520px;
     float: right;
+    clear: right;
     background: #f9f9f9;
     border: 1px solid grey;
-    margin: 6px 0 6px 12px;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    font-size: 88%;
+    line-height: 1.5em;
 }
 
 .infobox_title {
@@ -236,7 +288,21 @@ h1 {
 }
 
 .infobox_pic_title {
+    padding-top: 0;
     text-align: center;
+}
+
+.infobox_content_section {
+    vertical-align: text-top;
+    font-weight: bold;
+}
+
+.infobox_content_info {
+    width: 187px;
+}
+
+.infobox_content_span {
+    
 }
 
 .navbox {
@@ -245,27 +311,44 @@ h1 {
     background: deepskyblue;
 }
 
-h2 {
-    border-bottom: 1px solid grey;
-    overflow: hidden;
-}
-
-
 .section_picture {
-    padding: 3px;
+    margin: .5em 0 1.3em 1.4em;
     float: right;
+    clear: right;
     max-width: 230px;
+    line-height: 1.6;
     border: 1px solid grey;
+    text-align: center;
 }
 
-.section_picture_nasa {
-    display: block;
-    margin: 0 auto;
+.caption {
+    text-align: left;
+    line-height: 1.4em;
+    padding: 3px;
+    font-size: 94%;
+    overflow: hidden;
+    word-wrap: break-word;
 }
-
 
 .section_picture_apollo {
     height: 280px;
+}
+
+
+blockquote {
+    overflow: hidden;
+    margin: 1em 0;
+    padding: 0 40px;   
+}
+
+.nasa_cite {
+    height: auto;
+    width: auto;
+    line-height: 1.5em;
+    text-align: right;
+    font-style: normal;
+    padding-left: 1.6em;
+    margin-top: 0;
 }
 
 .section_picture_legacy {
