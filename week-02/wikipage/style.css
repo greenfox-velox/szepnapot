@@ -379,8 +379,7 @@ blockquote {
 }
 
 .section_picture_legacy {
-    display: block;
-    margin: 0 auto;
+    padding: 0 5px;
 }
 
 .catlinks {
