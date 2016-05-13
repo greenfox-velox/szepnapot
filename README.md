@@ -79,6 +79,10 @@
 
 [solutions](https://github.com/greenfox-velox/szepnapot/tree/master/week-02/day-2)
 
+#### Day 3-5: Project 
 
+* [wikipage syllabus](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02/3-advanced-css)
+
+[my work](https://szepnapot.github.io/wikipage)
 
 
