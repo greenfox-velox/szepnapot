@@ -166,7 +166,6 @@ aside {
     display: block;
     margin: 0 0 0 1.25em;
     padding: 0.25em 0;
-    border-bottom: 1px solid grey;
 }
 
 .panel-navigation > a {
@@ -181,7 +180,17 @@ aside {
     width: 139px;
     margin: 0 0 0 1.25em;
     padding: 0 10px 4px 0;
-    border-bottom: 1px solid grey;
+}
+
+.gradient-line {
+    width: 139px;
+}
+
+.gradient-line:before, .gradient-line:after {
+    content: "";
+    height: 0.5px;
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(170, 170, 170, 1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
 }
 
 .panel-section_projects {
@@ -234,6 +243,7 @@ article {
     padding: 1.25em 1.5em 1.5em 1.5em;
     border: 1px solid #a7d7f9;
     border-right-width: 0;
+    font-family: sans-serif;
 }
 
 h1 {
