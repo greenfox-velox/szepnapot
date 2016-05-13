@@ -3,9 +3,14 @@
     text-decoration: none;
 }
 
+a {
+    color: #0645ad;
+}
+
 body {
     margin: 0px;
 }
+
 
 header {
     position: relative;
@@ -122,14 +127,16 @@ aside {
 
 .panel {
     margin-top: 20px;
-    width: 168px;
+    width: 10em;
     font-family: sans-serif;
     font-size: 12px;
 }
 
 .panel-navigation {
     display: block;
-    margin: 0 auto;
+    margin: 0 0 0 1.25em;
+    padding: 0.25em 0;
+    border-bottom: 1px solid grey;
 }
 
 .panel-navigation > a {
@@ -139,27 +146,37 @@ aside {
     margin: 0 auto;
 }
 
-.panel-section {
+.panel-section, .panel-section_last, .panel-section_projects {
     width: 139px;
-    margin: 0 auto;
-    padding-bottom: 10px;
+    margin: 0 0 0 1.25em;
+    padding: 0 10px 4px 0;
+    border-bottom: 1px solid grey;
+}
+
+.panel-section_projects {
+    line-height: normal;
+}
+
+.panel-section_last {
+    border: none;
 }
 
 .panel-section_title {
-    margin: 10px 0 0 0;
-    padding-bottom: 5px;
+    margin: 0;
+    padding: 0.25em 0 0.25em 0.25em;
 }
 
 .panel-section_list {
+    height: auto;
     list-style-type: none;
     margin: 0;
     padding-left: 15px;
 }
 
-.last-a {
-    padding-bottom: 10px;
-    border-bottom: 1px solid grey;
+.panel-section_list > li {
+    height: auto;
 }
+
 
 body {
     font-family: sans-serif;
@@ -193,7 +210,11 @@ h1 {
     border-bottom: 1px solid #aaa;
 }
 
-h2 {
+.first-p {
+    margin-top: 0.4em;
+}
+
+h2, h3 {
     font-size: 1.5em;
     margin-top: 1em;
     line-height: 1.3;
@@ -209,15 +230,20 @@ h3 {
     padding-top: .5em;
     font-size: 1.2em;
     font-weight: bold;
+    border-bottom: none;
 }
 
-.edit {
+.edit, .hide {
     font-size: small;
     font-weight: normal;
     line-height: 1em;
     display: inline-block;
     vertical-align: baseline;
-    margin-left: 1em;
+    margin-left: 0.8em;
+}
+
+.hide {
+    margin-left: 0.2em;
 }
 
 .slogen {
@@ -229,7 +255,7 @@ h3 {
 .hatnote {
     height: 22px;
     padding-left: 1.6em;
-    margin-bottom: 0.5em;
+    margin-top: 2em;
     font-style: italic;
     font-size: 0.875em;
     line-height: 1.6em;
@@ -301,10 +327,6 @@ h3 {
     width: 187px;
 }
 
-.infobox_content_span {
-    
-}
-
 .navbox {
     width: 100%;
     height: 320px;
@@ -357,9 +379,12 @@ blockquote {
 }
 
 .catlinks {
-    width: 100%;
-    height: 60px;
-    background: cadetblue;
+    text-align: left;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin-top: 1em;
+    clear: both;
 }
 
 footer {
