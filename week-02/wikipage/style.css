@@ -284,6 +284,11 @@ h3 {
     margin: 0.3em 0;
 }
 
+.contentbox_list_sub {
+    padding-left: 20px;
+    line-height: 1.5em;
+}
+
 .contentbox_list > li {
     width: 105px;
     height: 21px;
