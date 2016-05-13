@@ -141,9 +141,10 @@ input {
 }
 
 aside {
-    max-width: 168px;
+    width: 14em;
     height: auto;
     background: #F6F6F6;
+    padding-left: 1em;
 }
 
 .logo {
@@ -178,6 +179,7 @@ aside {
 }
 
 .panel-section, .panel-section_last, .panel-section_projects {
+    line-height: 1.5em;
     width: 139px;
     margin: 0 0 0 1.25em;
     padding: 0 10px 4px 0;
@@ -196,7 +198,7 @@ aside {
     color: #4d4d4d;
     font-weight: normal;
     margin: 0;
-    padding: 0.25em 0 0.25em 0.25em;
+    padding: 0.25em 0 0.25em 0.15em;
 }
 
 .panel-section_list {
@@ -231,7 +233,7 @@ article {
     width: 100%;
     height: auto;
     background: white;
-    padding: 20px 24px 20px 24px;
+    padding: 1.25em 1.5em 1.5em 1.5em;
     border: 1px solid #a7d7f9;
     border-right-width: 0;
 }
@@ -241,8 +243,12 @@ h1 {
     overflow: visible;
     line-height: 1.3em;
     margin-bottom: 0.25em;
+    margin-top: 0;
     padding: 0;
     border-bottom: 1px solid #aaa;
+    font-family: times;
+    font-weight: normal;
+    font-size: 29px;
 }
 
 .first-p {
@@ -288,11 +294,11 @@ h3 {
 }
 
 .hatnote {
-    height: 22px;
+    height: auto;
     padding-left: 1.6em;
-    margin-top: 2em;
+    margin-top: 1.5em;
     font-style: italic;
-    font-size: 0.875em;
+    font-size: 14px;
     line-height: 1.6em;
 }
 
