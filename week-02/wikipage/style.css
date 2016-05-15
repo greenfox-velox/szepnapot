@@ -426,6 +426,19 @@ blockquote {
     padding: 0 5px;
 }
 
+.references {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.references-left {
+    
+}
+
 .catlinks {
     height: auto;
     width: auto;
