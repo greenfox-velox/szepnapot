@@ -3,14 +3,15 @@
 ## Velox class 
 
 
+
 [**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
 
 
-### Week 1:
-
-*Project: Build a CV page*
+### Week 1
 
 [**week 1 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-01)
+
+*Project: Build a CV page*
 
 ### Short list, overview about week expectations
 
@@ -48,12 +49,11 @@
 
 [CV Anakin template](https://szepnapot.github.io/anakin "Anakin CV")
 
-
 ## Week 2:
 
-*Project: Build two Wikipedia Pages*
+[**week 2 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02)  
 
-[**week 2 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02) | 
+*Project: Build two Wikipedia Pages*
 
 ### Short list, overview about week expectations
 
