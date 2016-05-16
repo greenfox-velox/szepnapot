@@ -69,7 +69,7 @@ header {
 
 .tabs-left_talk,
 .tabs-left_article {
-	padding: 10px 5px 5px 5px;
+	padding: 10px 5px 5px;
 }
 
 .tabs-left_talk {
@@ -112,7 +112,7 @@ input {
 .tabs-right_edit,
 .tabs-right_history {
 	border-right: 1px solid #a7d7f9;
-	padding: 10px 5px 5px 5px;
+	padding: 10px 5px 5px;
 }
 
 .tabs-right_read {
@@ -228,7 +228,7 @@ article {
 	width: 100%;
 	height: auto;
 	background: white;
-	padding: 1.25em 1.5em 1.5em 1.5em;
+	padding: 1.25em 1.5em 1.5em;
 	border: 1px solid #a7d7f9;
 	border-right-width: 0;
 	font-family: sans-serif;
