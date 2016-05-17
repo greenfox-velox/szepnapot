@@ -12,7 +12,7 @@ def isPrime (primeList, candidate):
 
 
 def primeList(listLength):
-	if listLength < 1 :
+	if listLength < 1:
 		return []
 	primes = [2]
 	candidate = 3
