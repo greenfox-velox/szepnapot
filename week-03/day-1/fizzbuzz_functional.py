@@ -1,0 +1,15 @@
+def fizz_buzz(num):
+	if num % 3 == 0 and num % 5 == 0:
+		return "FizzBuzz"
+	elif num % 3 == 0:
+		return "Fizz"
+	elif num % 5 == 0:
+		return "Buzz"
+	else:
+		return num
+
+
+max = int(input("Enter max number: "))
+
+for x in map(fizz_buzz, range(1, max + 1)):
+	print(x)
