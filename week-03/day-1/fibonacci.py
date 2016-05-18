@@ -7,5 +7,3 @@ def fibonaccis(n):
 		i =  previous[-1] + previous[-2]
 		previous.append(i)
 	return previous
-
-print(fibonaccis(50))
