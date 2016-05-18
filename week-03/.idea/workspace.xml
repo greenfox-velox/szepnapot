@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf32980-7099-456e-a255-23c2f05cbe63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day-1/hello_dictionary.py" afterPath="$PROJECT_DIR$/day-1/hello_dictionary.py" />
     </list>
     <ignored path="week-03.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,6 +31,18 @@
                 <state relative-caret-position="45">
                   <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hello_dictionary.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/day-1/hello_dictionary.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="290">
+                  <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -108,8 +120,8 @@
           <file leaf-file-name="fibonacci.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/day-1/fibonacci.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -139,7 +151,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fibonacci_sum.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="fibonacci_sum.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
@@ -149,7 +161,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fibonacci_sum_easy.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="fibonacci_sum_easy.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum_easy.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
@@ -187,7 +199,6 @@
         <option value="$PROJECT_DIR$/prims_from_web.py" />
         <option value="$PROJECT_DIR$/day-1/29.py" />
         <option value="$PROJECT_DIR$/day-1/30.py" />
-        <option value="$PROJECT_DIR$/day-1/hello_dictionary.py" />
         <option value="$PROJECT_DIR$/day-1/31.py" />
         <option value="$PROJECT_DIR$/day-1/32.py" />
         <option value="$PROJECT_DIR$/day-1/33.py" />
@@ -209,6 +220,7 @@
         <option value="$PROJECT_DIR$/day-1/fibonacci_sum.py" />
         <option value="$PROJECT_DIR$/day-1/fibonacci_sum_easy.py" />
         <option value="$PROJECT_DIR$/day-1/fibonacci.py" />
+        <option value="$PROJECT_DIR$/day-1/hello_dictionary.py" />
       </list>
     </option>
   </component>
@@ -286,24 +298,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.fibonacci_sum">
-    <configuration default="false" name="factorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day-1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="week-03" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-1/factorial.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.hello_dictionary">
     <configuration default="false" name="fibonacci" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -368,6 +363,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="week-03" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-1/fibonacci_sum_easy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="hello_dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day-1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="week-03" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-1/hello_dictionary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -507,19 +519,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.factorial" />
-      <item index="1" class="java.lang.String" itemvalue="Python.fibonacci" />
-      <item index="2" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
-      <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_sum" />
-      <item index="4" class="java.lang.String" itemvalue="Python.fibonacci_sum_easy" />
+      <item index="0" class="java.lang.String" itemvalue="Python.fibonacci" />
+      <item index="1" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
+      <item index="2" class="java.lang.String" itemvalue="Python.fibonacci_sum" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_sum_easy" />
+      <item index="4" class="java.lang.String" itemvalue="Python.hello_dictionary" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.fibonacci_sum" />
-        <item index="1" class="java.lang.String" itemvalue="Python.fibonacci_sum_easy" />
-        <item index="2" class="java.lang.String" itemvalue="Python.fibonacci" />
-        <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
-        <item index="4" class="java.lang.String" itemvalue="Python.factorial" />
+        <item index="0" class="java.lang.String" itemvalue="Python.hello_dictionary" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fibonacci_sum" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fibonacci_sum_easy" />
+        <item index="3" class="java.lang.String" itemvalue="Python.fibonacci" />
+        <item index="4" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
       </list>
     </recent_temporary>
   </component>
@@ -543,12 +555,12 @@
     <frame x="-1" y="27" width="1602" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.143125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.188125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4642857" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5330688" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49338624" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -639,16 +651,6 @@
         <state relative-caret-position="255">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day-1/hello_dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,11 +822,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day-1/fibonacci.py">
+    <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum_easy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day-1/hello_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -836,10 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum_easy.py">
+    <entry file="file://$PROJECT_DIR$/day-1/fibonacci.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding />
         </state>
       </provider>
