@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf32980-7099-456e-a255-23c2f05cbe63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day-1/fibonacci.py" afterPath="$PROJECT_DIR$/day-1/fibonacci.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day-1/fibonacci_sum.py" afterPath="$PROJECT_DIR$/day-1/fibonacci_sum.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="week-03.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,8 +108,8 @@
           <file leaf-file-name="fibonacci.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/day-1/fibonacci.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -140,11 +139,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fibonacci_sum.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="fibonacci_sum.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum.py">
               <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fibonacci_sum_easy.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum_easy.py">
+              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
-                  <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+                  <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -197,8 +206,9 @@
         <option value="$PROJECT_DIR$/day-1/37_func.py" />
         <option value="$PROJECT_DIR$/day-1/factorial.py" />
         <option value="$PROJECT_DIR$/day-1/fibonacci_recursive.py" />
-        <option value="$PROJECT_DIR$/day-1/fibonacci.py" />
         <option value="$PROJECT_DIR$/day-1/fibonacci_sum.py" />
+        <option value="$PROJECT_DIR$/day-1/fibonacci_sum_easy.py" />
+        <option value="$PROJECT_DIR$/day-1/fibonacci.py" />
       </list>
     </option>
   </component>
@@ -277,23 +287,6 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Python.fibonacci_sum">
-    <configuration default="false" name="37_func" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day-1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="week-03" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-1/37_func.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="factorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -358,6 +351,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="week-03" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-1/fibonacci_sum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="fibonacci_sum_easy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day-1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="week-03" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-1/fibonacci_sum_easy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -497,19 +507,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.37_func" />
-      <item index="1" class="java.lang.String" itemvalue="Python.factorial" />
-      <item index="2" class="java.lang.String" itemvalue="Python.fibonacci" />
-      <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
-      <item index="4" class="java.lang.String" itemvalue="Python.fibonacci_sum" />
+      <item index="0" class="java.lang.String" itemvalue="Python.factorial" />
+      <item index="1" class="java.lang.String" itemvalue="Python.fibonacci" />
+      <item index="2" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_sum" />
+      <item index="4" class="java.lang.String" itemvalue="Python.fibonacci_sum_easy" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.fibonacci_sum" />
-        <item index="1" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fibonacci_sum_easy" />
         <item index="2" class="java.lang.String" itemvalue="Python.fibonacci" />
-        <item index="3" class="java.lang.String" itemvalue="Python.factorial" />
-        <item index="4" class="java.lang.String" itemvalue="Python.37_func" />
+        <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_recursive" />
+        <item index="4" class="java.lang.String" itemvalue="Python.factorial" />
       </list>
     </recent_temporary>
   </component>
@@ -812,16 +822,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day-1/fibonacci.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day-1/fibonacci_sum_easy.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding />
         </state>
       </provider>
