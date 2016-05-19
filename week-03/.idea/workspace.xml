@@ -65,11 +65,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="car.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="car.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/day-3/car.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
                   <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pirate.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/day-3/pirate.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -100,16 +110,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="135">
                   <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="union.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/day-1/union.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -284,12 +284,13 @@
         <option value="$PROJECT_DIR$/translator.py" />
         <option value="$PROJECT_DIR$/day-3/circle.py" />
         <option value="$PROJECT_DIR$/day-3/car.py" />
+        <option value="$PROJECT_DIR$/day-3/pirate.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="847" />
-    <option name="y" value="92" />
+    <option name="x" value="701" />
+    <option name="y" value="117" />
     <option name="width" value="1176" />
     <option name="height" value="684" />
   </component>
@@ -380,24 +381,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.car">
-    <configuration default="false" name="roman_nums" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day-1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="week-03" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-1/roman_nums.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.pirate">
     <configuration default="false" name="translator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -462,6 +446,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="week-03" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-3/car.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="pirate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day-3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="week-03" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-3/pirate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -601,19 +602,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.roman_nums" />
-      <item index="1" class="java.lang.String" itemvalue="Python.translator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.factorial" />
-      <item index="3" class="java.lang.String" itemvalue="Python.circle" />
-      <item index="4" class="java.lang.String" itemvalue="Python.car" />
+      <item index="0" class="java.lang.String" itemvalue="Python.translator" />
+      <item index="1" class="java.lang.String" itemvalue="Python.factorial" />
+      <item index="2" class="java.lang.String" itemvalue="Python.circle" />
+      <item index="3" class="java.lang.String" itemvalue="Python.car" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pirate" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.car" />
-        <item index="1" class="java.lang.String" itemvalue="Python.circle" />
-        <item index="2" class="java.lang.String" itemvalue="Python.translator" />
-        <item index="3" class="java.lang.String" itemvalue="Python.factorial" />
-        <item index="4" class="java.lang.String" itemvalue="Python.roman_nums" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pirate" />
+        <item index="1" class="java.lang.String" itemvalue="Python.car" />
+        <item index="2" class="java.lang.String" itemvalue="Python.circle" />
+        <item index="3" class="java.lang.String" itemvalue="Python.translator" />
+        <item index="4" class="java.lang.String" itemvalue="Python.factorial" />
       </list>
     </recent_temporary>
   </component>
@@ -634,7 +635,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="847" y="92" width="1176" height="684" extended-state="0" />
+    <frame x="701" y="117" width="1176" height="684" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07410562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -672,7 +673,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apple.py" />
     <entry file="file://$PROJECT_DIR$/fizzbuzz.py" />
     <entry file="file://$PROJECT_DIR$/numbers.py" />
     <entry file="file://$PROJECT_DIR$/day-1/fizzbuzz.py">
@@ -1028,6 +1028,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day-3/pirate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
         </state>
       </provider>
