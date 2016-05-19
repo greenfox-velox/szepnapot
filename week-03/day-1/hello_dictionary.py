@@ -11,28 +11,20 @@ soup = BeautifulSoup(raw_html, 'html.parser')
 strongs = soup("strong")
 
 GREETINGS = {}
-hellos = r'\d+\.\s([A-Z]+)\s?([A-Z]+).?'
-language = r'\d+.+\–\s([A-Za-z]+)'
+hellos = r'\d+\.\s([A-Z]+\s?[A-Z]+.).?'
+language = r'\d+.+\–\s([A-Za-z\s()]+)'
 
 for i in strongs:
 	i = i.text
-	if i[0].isdigit():
-		hello_parts = re.match(hellos, i).group(1, 2)
-		hy = (''.join(hello_parts)).capitalize()
-		print(hy)
+	print(i)
 
-		# country = re.match(language, i).group(0)
+	# if i[0].isdigit():
+	# 	hello_parts = re.match(hellos, i).group(1)
+	# 	# hy = (''.join(hello_parts)).capitalize()
+	# 	print(hello_parts)
+	# 	# country = re.match(language, i).group(0)
+	# 	# print(country)
 
-
-
-'''
-for i in strongs:
-	if i.text[0].isdigit():
-		GREETINGS = {((re.search(hellos, i.text).group(0))):((re.search(language, i.text).group(0)))}
-	else:
-		continue
-	print(GREETINGS)
-'''
 
 
 

@@ -26,8 +26,18 @@ def to_roman(n):
 		print(result)
 
 
-def to_arabic(n)
+def translate(roman):
+	letters = []
+	decimals = []
+	for letter in roman:
+		letters.append(letter)
+	for k in letters:
+		for v in romanList:
+			if k == v[0]:
+				decimals.append(v[1])
+	print(sum(decimals))
 	
-to_convert = int(input("Enter arabic number to convert: "))
+to_convert = input("Enter arabic number to convert: ")
+translate(to_convert.upper())
 
-to_roman(to_convert)
+# to_roman(int(to_convert))
