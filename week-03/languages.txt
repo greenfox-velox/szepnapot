@@ -1,12 +1,9 @@
 Abkhazian	AB
-Afar	AA
 Afrikaans	AF
 Albanian	SQ
 Amharic	AM
 Arabic	AR
 Armenian	HY
-Assamese	AS
-Aymara	AY
 Azerbaijani	AZ
 Bashkir	BA
 Basque	EU
@@ -40,7 +37,6 @@ Georgian	KA
 German	DE
 Greek	EL
 Greenlandic	KL
-Guarani	GN
 Gujarati	GU
 Hausa	HA
 Hebrew	IW
@@ -48,18 +44,14 @@ Hindi	HI
 Hungarian	HU
 Icelandic	IS
 Indonesian	IN
-Interlingua	IA
-Interlingue	IE
 Inupiak	IK
 Irish	GA
 Italian	IT
 Japanese	JA
 Javanese	JW
 Kannada	KN
-Kashmiri	KS
 Kazakh	KK
 Kinyarwanda	RW
-Kirghiz	KY
 Kirundi	RN
 Korean	KO
 Kurdish	KU
@@ -78,7 +70,6 @@ Marathi	MR
 Moldavian	MO
 Mongolian	MN
 Nauru	NA
-Nepali	NE
 Norwegian	NO
 Occitan	OC
 Oriya	OR
@@ -95,7 +86,6 @@ Russian	RU
 Samoan	SM
 Sangro	SG
 Serbian	SR
-Serbo-Croatian	SH
 Sesotho	ST
 Setswana	TN
 Shona	SN
@@ -106,7 +96,6 @@ Slovak	SK
 Slovenian	SL
 Somali	SO
 Spanish	ES
-Sudanese	SU
 Swahili	SW
 Swedish	SV
 Tagalog	TL
@@ -114,13 +103,10 @@ Tajik	TG
 Tamil	TA
 Tegulu	TE
 Thai	TH
-Tibetan	BO
 Tigrinya	TI
 Tonga	TO
-Tsonga	TS
 Turkish	TR
 Turkmen	TK
-Twi	TW
 Ukrainian	UK
 Urdu	UR
 Uzbek	UZ

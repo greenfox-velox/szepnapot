@@ -11,7 +11,7 @@ class Person:
 class Student(Person):
 
 	def __init__(self, grades=[], first="", last=""):
-		super(Student, self).__init__(first="", last="")
+		super().__init__(first="", last="")
 		self.grades = grades
 		self.first = first
 		self.last = last
