@@ -1,11 +1,31 @@
-def search(words):
+def check_palindrome(word):
+	if word == word[::-1]:
+		return True
+	return False
+
+
+def check_in_word(word):
+	left = 0
+	right = len(word)
+
+	while left < right - 1:
+		temp = word[left:right]
+		right -= 1
+
+		if check_palindrome(temp):
+			results.append(temp)
+		if right < left + 3:
+			left += 1
+			right = len(word)
+
+
+def palindrome_in_words(long_string):
+	words = long_string.split(' ')
+	check_in_word(long_string)
 	for word in words:
-		if word != word[::-1]:
-			words.remove(word)
-	print(words)
+		check_in_word(word)
+	print(list(set(results)))
 
-w = input("Enter words separated by space: ")
+results = []
 
-word_list = w.split()
-
-search(word_list)
+palindrome_in_words('dog goat dad duck doodle never')
