@@ -49,6 +49,7 @@
 
 [CV Anakin template](https://szepnapot.github.io/anakin "Anakin CV")
 
+
 ## Week 2:
 
 [**week 2 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02)  
@@ -85,4 +86,24 @@
 
 [my work](https://szepnapot.github.io/wikipage)
 
+
+## Week 3
+
+[**week 3 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-03)
+
+### Programs created this week:
+
+* [Binary search](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/binary.py)
+* [Factorial](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/factorial.py)
+* [Fibonacci](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/fibonacci.py)
+* [Fibonacci recursive](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/fibonacci_recursive.py)
+* [Fibonacci sum](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/fibonacci_sum_easy.py)
+* [FizzBuzz](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/fizzbuzz.py)
+* [Linear search](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/linear_search.py)
+* [Palindrome](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/palindrome.py)
+* [Palindrome search](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/palindrome_search.py)
+* [Prime generator](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/prime_generator.py)
+* [Roman converter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/roman_nums.py)
+* [List unite](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/union.py)
+* [Unused digits filter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-4/filter_unused_digits.py)
 
