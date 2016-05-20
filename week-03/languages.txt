@@ -31,7 +31,6 @@ Fiji	FJ
 Finnish	FI
 French	FR
 Frisian	FY
-Gaelic 	GD
 Galician	GL
 Georgian	KA
 German	DE
@@ -52,8 +51,6 @@ Javanese	JW
 Kannada	KN
 Kazakh	KK
 Kinyarwanda	RW
-Kirundi	RN
-Korean	KO
 Kurdish	KU
 Laothian	LO
 Latin	LA
@@ -69,10 +66,7 @@ Maori	MI
 Marathi	MR
 Moldavian	MO
 Mongolian	MN
-Nauru	NA
 Norwegian	NO
-Occitan	OC
-Oriya	OR
 Oromo, Afan	OM
 Pashto, Pushto	PS
 Persian	FA
@@ -84,14 +78,10 @@ Rhaeto-Romance	RM
 Romanian	RO
 Russian	RU
 Samoan	SM
-Sangro	SG
 Serbian	SR
 Sesotho	ST
-Setswana	TN
 Shona	SN
-Sindhi	SD
 Singhalese	SI
-Siswati	SS
 Slovak	SK
 Slovenian	SL
 Somali	SO
@@ -99,7 +89,6 @@ Spanish	ES
 Swahili	SW
 Swedish	SV
 Tagalog	TL
-Tajik	TG
 Tamil	TA
 Tegulu	TE
 Thai	TH
@@ -112,4 +101,3 @@ Urdu	UR
 Uzbek	UZ
 Vietnamese	VI
 Welsh	CY
-

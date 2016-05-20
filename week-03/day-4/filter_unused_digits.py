@@ -1,9 +1,12 @@
 def unused_digits(*args):
-	all_nums = list(range(0, 11))
-	arg = ''.join(map(str, list(args)))
-	used_digits = list(arg)
-	print(used_digits)
-	print(all_nums)
+	all_nums = range(10)
+	unused = ''
+	number = ''.join(str(args))
+	for num in all_nums:
+		num = str(num)
+		if num not in number:
+			unused += num
+	return str(unused)
 
 
 
