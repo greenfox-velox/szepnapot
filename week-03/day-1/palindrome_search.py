@@ -28,4 +28,4 @@ def palindrome_in_words(long_string):
 
 results = []
 
-palindrome_in_words('dog goat dad duck doodle never')
+palindrome_in_words('mom and dad sit in a kayak')
