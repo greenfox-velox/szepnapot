@@ -108,7 +108,17 @@
 * [Unused digits filter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-4/filter_unused_digits.py)
 
 <p align="center">
-  <a href="https://medium.com/@pocok">
+  <a href="https://medium.com/@pocok" target="_blank">
   <img src="https://cdn-images-1.medium.com/max/800/1*5ztbgEt4NqpVaxTc64C-XA.png" alt="Medium logo">
   </a>
+
+  <a href="http://www.codewars.com/users/szepnapot" target="_blank">
+  <img src="https://d2gn4xht817m0g.cloudfront.net/p/product_screenshots/images/preview505/000/155/390/155390-0e6082933ef0647e22246e2791de61a46afb1ec1.jpg?1364103310">
+  </a>
 </p>
+<p align="center">
+  <a href="http://referrals.trhou.se/peterlodri" target="_blank">
+  <img src="https://static.teamtreehouse.com/assets/content/referral-badge-grn.png" height=200px>
+  </a>
+</p>
+
