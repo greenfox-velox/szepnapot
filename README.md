@@ -108,4 +108,4 @@
 * [Unused digits filter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-4/filter_unused_digits.py)
 
 
-![@pocok](https://cdn-images-1.medium.com/max/800/1*5ztbgEt4NqpVaxTc64C-XA.png)
+![@pocok](https://medium.com/@pocok)
