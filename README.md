@@ -109,4 +109,7 @@
 
 
 ![Medium](https://cdn-images-1.medium.com/max/800/1*5ztbgEt4NqpVaxTc64C-XA.png)
-[## Link to profile](https://medium.com/@pocok)
+<p align="center">
+  <br></br>
+  [Link to profile](https://medium.com/@pocok)
+</p>
