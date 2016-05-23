@@ -1,6 +1,6 @@
 from translate import Translator
 
-text = "Hello"
+text = "Shit"
 languages = []
 
 with open('languages.txt') as langs:
