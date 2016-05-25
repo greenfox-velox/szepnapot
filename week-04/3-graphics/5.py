@@ -3,7 +3,7 @@ from tkinter import *
 # create a 300x300 canvas.
 # create a line drawing function that takes 2 parameters:
 # the x and y coordinates of the line's starting point
-# and draws a line from that point to the center of the canvas.
+# and draws a 50 long horizontal line from that point.
 # draw 3 lines with that function.
 
 
@@ -13,7 +13,7 @@ class Example(Canvas):
 		Canvas.__init__(self)
 
 	def draw_line(self, x, y):
-		return canvas.create_line(x, y, 150, 150)
+		return canvas.create_line(x, y, x, y+50)
 
 
 if __name__ == '__main__':
@@ -25,7 +25,3 @@ if __name__ == '__main__':
 	E.draw_line(230, 100)
 	canvas.pack()
 	root.mainloop()
-
-
-
-
