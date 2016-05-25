@@ -17,6 +17,6 @@ def five_most_frequent():
 	number_csv = PrettyTable(["number", "frequency"])
 	for k, v in numbers_freq.items():
 		number_csv.add_row([k, v])
-	print(number_csv.get_string(sortby="frequency", reversesort=True))
+	print(number_csv.get_string(sortby="frequency", reversesort=True, start=0, end=5))
 
 five_most_frequent()
