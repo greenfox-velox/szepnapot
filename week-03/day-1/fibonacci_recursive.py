@@ -13,4 +13,4 @@ for i in range(nums):
 	print(fibo(i))
 '''
 
-print(fibo(100))
+print(fibo(20))
