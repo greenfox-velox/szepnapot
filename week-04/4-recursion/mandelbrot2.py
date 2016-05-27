@@ -26,8 +26,8 @@ def mandelbrot(xa,xb,ya,yb,x,y):
 
 
 #window size
-x=640
-y=480
+x=800
+y=600
 #corners of  the mandelbrot plan to display
 xa = -2.0; xb = 1.0
 ya = -1.27; yb = 1.27
