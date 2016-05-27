@@ -107,6 +107,39 @@
 * [List unite](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/union.py)
 * [Unused digits filter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-4/filter_unused_digits.py)
 
+## Week 4
+
+[**week 4 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-04)
+
+### Overview abaout this week:
+
+* Recursive functions
+
+* Tkinter
+
+* Fractal drawing
+
+### Programs created this week:
+<p align="center">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/squarefractal.png" height="200px">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/hexagon.png" height="200px">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/triangle.png" height="200px">
+</p>
+
+* [Ceasar decipher](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/01_io/crypto_4encoded.py#L2)
+* [Lotto CSV top5 number](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/02_pip/lottery/lottery.py)
+* [Night sky with boxes](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/3-graphics/16.py)
+* [Dot connecter](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/3-graphics/15.py)
+* [Weird lines](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/3-graphics/r1.py)
+* [Word separator](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/9.py)
+* [Remove 'x'](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/8.py)
+* [Recurive countdown](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/1.py)
+* [Recursive sum](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/2.py)
+* [Digit count](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/3.py)
+* [Square fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/recursive_graphic.py)
+* [Triangle fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/triangle_fractal.py)
+* [Hexagon fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/hexagon_fractal.py)
+
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
   <img src="https://cdn-images-1.medium.com/max/800/1*5ztbgEt4NqpVaxTc64C-XA.png" alt="Medium logo">
