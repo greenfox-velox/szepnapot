@@ -11,4 +11,4 @@ def x_to_y(strng=None):
 
 
 
-print(x_to_y('xXhello'))
+print(x_to_y('xo xoxo'))
