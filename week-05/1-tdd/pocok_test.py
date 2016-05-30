@@ -21,6 +21,11 @@ class DayOneTestCases(unittest.TestCase):
 		self.assertTrue(is_anagramm("Arrigo Boito", "Tobia Gorrio"))
 		self.assertFalse(is_anagramm("Ted Morgan", "dEt Yorgen"))
 
+	def test_isanagramm_random_letter_words(self):
+		word1 = str(range(1, 6))
+		word2 = str(range(1, 6))
+		self.assertFalse(is_anagramm(word1, word2))
+
 	def test_letter_count_compare_with_Hello(self):
 		hello_count = {'H': 1, 'l': 2, 'o': 1, 'e': 1}
 		self.assertEqual(hello_count, letter_count("Hello"))
