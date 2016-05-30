@@ -36,12 +36,14 @@ def is_vovel(char):
 
 # Create a method that translates hungarian into the teve language
 def translate(hungarian):
-	teve = hungarian
-	if type(teve) != str:
+	teve = ''
+	if type(hungarian) != str:
 		return False
-	for char in teve:
+	for char in hungarian:
 		if is_vovel(char):
-			teve = (char+'v'+char).join(teve.split(char))
+			teve += (char+'v'+char)
 		elif char.isdigit():
 			return False
+		elif not is_vovel(char):
+			teve += char
 	return teve

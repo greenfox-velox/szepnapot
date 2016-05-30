@@ -112,5 +112,8 @@ class TestExtend(unittest.TestCase):
 	def test_translate_latin_chars(self):
 		self.assertEqual(extend.translate("ő és bátyja"), "ővő évés bávátyjava")
 
+	def test_translate_sentence(self):
+		self.assertEqual(extend.translate("Hello, there!"), "Hevellovo, thevereve!")
+
 if __name__ == '__main__':
 	unittest.main()

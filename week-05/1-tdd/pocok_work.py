@@ -9,7 +9,7 @@ def anagramm(str1, str2):
 	return sorted(list(str1.lower())) == sorted(list(str2.lower()))
 
 
-def letter_count(strng):
+def count_letters(strng):
 	if type(strng) != str:
 		return False
 	letter_freq = {}
