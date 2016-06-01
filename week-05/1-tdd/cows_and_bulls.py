@@ -19,27 +19,35 @@ class CowsAndBulls:
 
 	def guess_valid(self, guess):
 		if type(guess) == str and guess.lower() == 'end':
-			self.end()
+			print(self.end())
 		elif len(str(guess)) < 4 or len(str(guess)) > 4:
-			return False
+			return "Invalid input: {}".format(guess)
 		else:
 			self.guess = int(guess)
 			return True
 
-	def guess_result(self, guess):
-		if not self.guess_valid(guess):
-			return "Invalid input: {}".format(guess)
-		if self.cows == 4:
-			self.end()
+	def cow_check(self):
+		if self.cows == 4 or guess == self.secret:
+			print(self.end())
+		return False
+
+	def guess_compare(self, guess_digits, secret_digits):
 		self.count += 1
-		guess_digits = list(str(guess))
-		secret_digits = list(str(self.secret))
+		self.cows = 0
+		self.bulls = 0
 		for i in range(len(guess_digits)):
 			if guess_digits[i] == secret_digits[i]:
 				self.cows += 1
 			elif guess_digits[i] in secret_digits:
 				self.bulls += 1
-		return "{} cows, {} bulls.".format(self.cows, self.bulls)
+
+	def guess_result(self, guess):
+		self.guess_valid(guess)
+		if not self.cow_check():
+			guess_digits = list(str(guess))
+			secret_digits = list(str(self.secret))
+			self.guess_compare(guess_digits, secret_digits)
+			return "{} cows, {} bulls.".format(self.cows, self.bulls)
 
 	def printer(self):
 		return "It took you {} guesses. The random number was: {}".format(self.count, self.secret)
@@ -53,5 +61,6 @@ if __name__ == '__main__':
 	print(cb.help())
 
 	while cb.state == 'playing':
+		print(cb.count)
 		guess = input("Enter guess: >> ")
 		print(cb.guess_result(guess))
