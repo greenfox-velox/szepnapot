@@ -13,18 +13,22 @@ def remove_task(task):
 def get_list(file):
 	with open(file) as f:
 		reader = csv.reader(f, delimiter=';')
-		return list(map(tuple, reader))
+		return list(reader)
 
-completed = '[x]'
-incomplete = '[ ]'
+def complete_task(task):
+	try:
+		get_list('todo.csv')[int(task) - 1] = 'True'
+	except ValueError:
+		print("Unable to remove: Index is out of bound")
+	return
 
 print(get_list('todo.csv'))
-remove_task(2)
-print(get_list('todo.csv'))
 
-for i in range(len(your_list)):
-	if your_list[i][0] != 'True':
-		print("{} - {} {}".format(str(i + 1), completed, your_list[i][1]))
-	else:
-		print("{} - {} {}".format(str(i + 1), incomplete, your_list[i][1]))
+# lista = [['False', 'Eat'], ['False', 'Sleep'], ['True', 'Shop'], ['False', 'Drink'], ['False', 'Food']]
+#
+with open('todo.csv', 'w', newline='') as f:
+	spamwriter = csv.writer(f, delimiter=';',quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	for line in lista:
+		spamwriter.writerow(line)
+
 

@@ -19,7 +19,7 @@ class ToDo:
 	def get_list(self, file):
 		with open(file) as f:
 			reader = csv.reader(f, delimiter=';')
-			return list(map(tuple, reader))
+			return list(reader)
 
 	def list_view(self):
 		content = self.get_list('todo.csv')
@@ -46,21 +46,27 @@ class ToDo:
 		return self.save()
 
 
-	def complete_task(self):
-		
-		pass
+	def complete_task(self, task):
+		try:
+			self.todo_list[int(task) - 1][0] = 'True'
+		except ValueError:
+			print("Unable to check: Index is not a number")
+		except IndexError:
+			print("Unable to check: Index is out of bound")
+		return self.save()
 
 	def loader(self, file):
 		with open(file) as f:
 			return f.read()
 
 	def save(self):
-		with open('todo.csv', 'w') as f:
-			for i in self.todo_list:
-				f.write(i)
+		with open('todo.csv', 'w', newline='') as f:
+			todo_writer = csv.writer(f, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+			for line in self.todo_list:
+				todo_writer.writerow(line)
 
 	def create(self):
-		self.f = open('todo.txt', 'w')
+		self.f = open('todo.csv', 'w')
 		return self.f
 
 t = ToDo()
@@ -87,7 +93,10 @@ def arguments(argv):
 			except IndexError:
 				print("Unable to add: No task is provided")
 		elif opt in ("-c", "--complete"):
-			pass
+			try:
+				t.complete_task(arg)
+			except IndexError:
+				print("Unable to check: No index is provided")
 
 if __name__ == '__main__':
 	arguments(sys.argv[1:])
