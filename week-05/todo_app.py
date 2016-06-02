@@ -1,13 +1,16 @@
 import sys, getopt
+import csv
 
 class ToDo:
 
 	def __init__(self):
 		try:
-			self.loader('todo.txt')
+			self.loader('todo.csv')
 		except FileNotFoundError:
 			self.create()
-		self.todo_list = self.get_list('todo.txt')
+		self.todo_list = self.get_list('todo.csv')
+		self.completed = '[x]'
+		self.incomplete = '[ ]'
 
 	def usage(self):
 		with open('usage.txt') as f:
@@ -15,37 +18,44 @@ class ToDo:
 
 	def get_list(self, file):
 		with open(file) as f:
-			return f.readlines()
+			reader = csv.reader(f, delimiter=';')
+			return list(map(tuple, reader))
 
 	def list_view(self):
-		content = self.get_list('todo.txt')
+		content = self.get_list('todo.csv')
+		formatted_content = []
 		if len(content) < 1:
 			return "No todos for today :)"
-		for i in range(len(content)):
-			content[i] = '{} - '.format(str(i + 1)) + content[i]
-		return ''.join(content)
+		for i in range(len(self.todo_list)):
+			if self.todo_list[i][0] != 'True':
+				formatted_content.append("{} - {} {}".format(str(i + 1), self.incomplete, self.todo_list[i][1]))
+			else:
+				formatted_content.append("{} - {} {}".format(str(i + 1), self.completed, self.todo_list[i][1]))
+		return '\n'.join(formatted_content)
 
 
 	def add_task(self, task):
-		with open('todo.txt', 'a') as f:
-			return f.write(str(task) + "\n")
+		with open('todo.csv', 'a') as f:
+			return f.write('{};{}'.format('False', str(task) + '\n'))
 
 	def remove_task(self, task):
-		self.todo_list.pop(int(task) - 1)
+		try:
+			self.todo_list.pop(int(task) - 1)
+		except ValueError:
+			print("Unable to remove: Index is out of bound")
 		return self.save()
 
 
 	def complete_task(self):
-		# completes a task, put an 'X' to the end
+		
 		pass
-
 
 	def loader(self, file):
 		with open(file) as f:
 			return f.read()
 
 	def save(self):
-		with open('todo.txt', 'w') as f:
+		with open('todo.csv', 'w') as f:
 			for i in self.todo_list:
 				f.write(i)
 
@@ -54,7 +64,6 @@ class ToDo:
 		return self.f
 
 t = ToDo()
-
 
 def arguments(argv):
 	try:
@@ -79,7 +88,6 @@ def arguments(argv):
 				print("Unable to add: No task is provided")
 		elif opt in ("-c", "--complete"):
 			pass
-
 
 if __name__ == '__main__':
 	arguments(sys.argv[1:])

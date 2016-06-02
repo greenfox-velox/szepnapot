@@ -1,0 +1,14 @@
+import csv
+
+with open('todoa.csv', 'r') as f:
+	reader = csv.reader(f, delimiter=';')
+	your_list = list(map(tuple, reader))
+
+completed = '[x]'
+incomplete = '[ ]'
+
+for i in range(len(your_list)):
+	if your_list[i][0] != 'True':
+		print("{} - {} {}".format(str(i + 1), completed, your_list[i][1]))
+	else:
+		print("{} - {} {}".format(str(i + 1), incomplete, your_list[i][1]))
