@@ -31,7 +31,7 @@ class ToDo:
 				formatted_content.append("{} - {} {}".format(str(i + 1), self.incomplete, self.todo_list[i][1]))
 			else:
 				formatted_content.append("{} - {} {}".format(str(i + 1), self.completed, self.todo_list[i][1]))
-		return '\n'.join(formatted_content)
+		sys.stderr.write('\n'.join(formatted_content))
 
 
 	def add_task(self, task):

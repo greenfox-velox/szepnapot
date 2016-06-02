@@ -1,16 +1,22 @@
 import tkinter as tk
 from tkinter import messagebox as mbox
+from todo_app import ToDo, arguments
+import sys
 
 
 class ToDoGui:
 	def __init__(self, root):
+		self.t = ToDo()
 		self.root = root
 		self.mainframe = tk.Frame(self.root, bg="white")
 		self.mainframe.pack(fill=tk.BOTH, expand=True)
 
 		self.build_grid()
 		self.build_banner()
+		self.build_text_area()
 		self.build_buttons()
+		sys.stderr = TextRedirector(self.text, "stderr")
+		self.entry()
 
 
 	def build_grid(self):
@@ -36,7 +42,7 @@ class ToDoGui:
 
 	def build_buttons(self):
 		buttons_frame = tk.Frame(self.mainframe)
-		buttons_frame.grid(row=2, column=0, sticky='nsew',
+		buttons_frame.grid(row=3, column=0, sticky='nsew',
 											 padx=10, pady=10)
 		buttons_frame.columnconfigure(0, weight=1)
 		buttons_frame.columnconfigure(1, weight=1)
@@ -46,7 +52,7 @@ class ToDoGui:
 		self.view_button= tk.Button(
 			buttons_frame,
 			text='View list',
-			command=None
+			command=self.t.list_view
 		)
 
 		self.add_button = tk.Button(
@@ -71,6 +77,34 @@ class ToDoGui:
 		self.add_button.grid(row=0, column=1, sticky='ew')
 		self.remove_button.grid(row=0, column=2, sticky='ew')
 		self.complete_button.grid(row=0, column=3, sticky='ew')
+
+	def entry(self):
+		entry_field = tk.Entry(self.mainframe, bd=2)
+		entry_field.grid(row=1, column=0, sticky='nwse', padx=10, pady=10)
+		entry_field.insert(0, 'Enter task OR number of a task')
+		entry_field.focus()
+
+	def build_text_area(self):
+		text_frame = tk.Text(self.mainframe, wrap="word")
+		text_frame.grid(row=2, column=0, sticky='nsew',
+											 padx=10, pady=10)
+
+		text_frame.columnconfigure(0, weight=1)
+		text_frame.config(state=tk.DISABLED)
+		text_frame.tag_configure("stderr", foreground="#b22222")
+		self.text =text_frame
+		return self.text
+
+class TextRedirector(object):
+	def __init__(self, widget, tag="stderr"):
+		self.widget = widget
+		self.tag = tag
+
+	def write(self, str):
+		self.widget.delete(1.0, tk.END)
+		self.widget.configure(state="normal")
+		self.widget.insert("end", str, (self.tag,))
+		self.widget.configure(state="disabled")
 
 if __name__ == '__main__':
 	root = tk.Tk()
