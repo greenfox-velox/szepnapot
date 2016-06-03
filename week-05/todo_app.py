@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sys, getopt
 import csv
 
@@ -5,7 +6,7 @@ class ToDo:
 
 	def __init__(self):
 		try:
-			self.loader('todo.csv')
+			self.get_list('todo.csv')
 		except FileNotFoundError:
 			self.create()
 		self.todo_list = self.get_list('todo.csv')
@@ -19,7 +20,9 @@ class ToDo:
 	def get_list(self, file):
 		with open(file) as f:
 			reader = csv.reader(f, delimiter=';')
-			return list(reader)
+			lista = list(reader)
+			f.close()
+		return lista
 
 	def list_view(self):
 		content = self.get_list('todo.csv')
@@ -35,8 +38,8 @@ class ToDo:
 
 
 	def add_task(self, task):
-		with open('todo.csv', 'a') as f:
-			return f.write('{};{}'.format('False', str(task) + '\n'))
+		self.todo_list.append(['False', task])
+		return self.save()
 
 	def remove_task(self, task):
 		try:
@@ -54,10 +57,6 @@ class ToDo:
 		except IndexError:
 			print("Unable to check: Index is out of bound")
 		return self.save()
-
-	def loader(self, file):
-		with open(file) as f:
-			return f.read()
 
 	def save(self):
 		with open('todo.csv', 'w', newline='') as f:
