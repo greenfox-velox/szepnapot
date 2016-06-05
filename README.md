@@ -161,10 +161,10 @@
   <img src="http://i.imgur.com/K6IyYzG.png" height="200px">
 </p>
 
-*[Cows and bulls](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/1-tdd/cows_and_bulls.py)
-*[Birthdate validator](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/3-exceptions/3.py)
-*[CLI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_app.py)
-*[GUI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_gui.py)
+* [Cows and bulls](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/1-tdd/cows_and_bulls.py)
+* [Birthdate validator](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/3-exceptions/3.py)
+* [CLI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_app.py)
+* [GUI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_gui.py)
 
 
 <p align="center">
