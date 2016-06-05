@@ -1,5 +1,5 @@
 
-# GreenFox Academy
+# [GreenFox Academy](http://www.greenfoxacademy.com/)
 ## Velox class 
 
 
@@ -111,7 +111,7 @@
 
 [**week 4 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-04)
 
-### Overview abaout this week:
+### Overview about the week:
 
 * Recursive functions
 
@@ -139,6 +139,33 @@
 * [Square fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/4-recursion/recursive_graphic.py)
 * [Triangle fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/triangle_fractal.py)
 * [Hexagon fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/hexagon_fractal.py)
+
+## Week 5
+
+[**Week 5 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-05)
+
+### Overview about the week:
+
+* Basic TDD principles
+
+* Unittesting
+
+* Story driven development
+
+* CLI
+
+### Programs created this week:
+<p align="center">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-05/pykeep.png" height="200px">
+  <img src="http://i.imgur.com/8Mdc3UN.png" height="200px">
+  <img src="http://i.imgur.com/K6IyYzG.png" height="200px">
+</p>
+
+*[Cows and bulls](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/1-tdd/cows_and_bulls.py)
+*[Birthdate validator](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/3-exceptions/3.py)
+*[CLI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_app.py)
+*[GUI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_gui.py)
+
 
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
