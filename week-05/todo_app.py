@@ -52,7 +52,7 @@ class ToDo:
 	def complete_task(self, task):
 		try:
 			self.todo_list[int(task) - 1][0] = 'True'
-		except ValueError:
+		except TypeError:
 			print("Unable to check: Index is not a number")
 		except IndexError:
 			print("Unable to check: Index is out of bound")

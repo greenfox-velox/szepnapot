@@ -1,5 +1,4 @@
 import random
-import sys
 
 class CowsAndBulls:
 
@@ -61,6 +60,6 @@ if __name__ == '__main__':
 	print(cb.help())
 
 	while cb.state == 'playing':
-		print(cb.count)
+		# print(cb.count)
 		guess = input("Enter guess: >> ")
 		print(cb.guess_result(guess))

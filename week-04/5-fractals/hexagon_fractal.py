@@ -14,7 +14,7 @@ canvas = Canvas(root, width=WIDTH, height=HEIGHT, bg=gen_hex_colour_code())
 
 def create_hex(topx, topy, size, fill=gen_hex_colour_code()):
   ma = math.sqrt(3) / 2 * size
-  if size < 9:
+  if size < 200:
     return
   canvas.create_polygon(topx, topy, topx + size, topy, topx + size + size/2, topy + ma, topx + size, topy + ma*2,
                         topx, topy + ma*2, topx - size/2, topy + ma, topx, topy, fill=fill, outline=fill)

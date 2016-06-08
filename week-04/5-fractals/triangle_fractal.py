@@ -21,7 +21,7 @@ def triangle_pattern(x, y, size, fill=random.choice(COLORS)):
 	ma = math.sqrt(3)/2 * size
 	canvas.create_polygon([x, y, x + size, y, x + size / 2, y + ma],
 												fill=fill, outline="black")
-	if size <= 15:
+	if size <= 5:
 		pass
 	else:
 		triangle_pattern(x, y, size / 2, fill=random.choice(COLORS))
