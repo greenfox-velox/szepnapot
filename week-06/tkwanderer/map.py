@@ -81,6 +81,20 @@ class Map:
 	def monster_positions(self):
 		return [i.position for i in self.map_texture if type(i) == Skeleton or type(i) == Boss]
 
+	def get_monster(self):
+		return [i for i in self.map_texture if i.position == (self.hero.position['x'], self.hero.position['y']) \
+					 and type(i) != Tile]
+
+	def is_monster_dead(self, monster):
+		return monster.hp <= 0
+
+	def combat(self):
+		monster = self.get_monster()[0]
+		self.hero.attack(monster)
+		if self.is_monster_dead(monster):
+			self.map_texture.remove(monster)
+			self.hero.level_up()
+
 	def move_route(self, key):
 		pressed_key = key.keysym
 		if pressed_key == 'Up':
@@ -99,9 +113,10 @@ class Map:
 			self.hero.move_left()
 			if not self.is_valid_move():
 				self.hero.move_right()
-		elif pressed_key == 'Space':
+		elif pressed_key == 'space':
 			if self.is_valid_attack():
-				pass
+				self.combat()
+
 
 	def is_valid_move(self):
 		if (self.hero.position['x'], self.hero.position['y']) in self.wall_positions():

@@ -11,13 +11,13 @@ class Skeleton(Character):
 		self.canvas = canvas
 		self.position = (x, y)
 
-		self.monster_hp = 2 * self.map_level * self.dice()
-		self.monster_dp = self.map_level/2 * self.dice()
-		self.monster_sp = self.map_level * self.dice()
+		self.hp = 2 * self.map_level * self.dice()
+		self.dp = self.map_level/2 * self.dice()
+		self.sp = self.map_level * self.dice()
 
 	def draw(self):
 		self.texture.draw_img(self.img)
 
 	def __str__(self):
-		return "HP: {}/{}, DP: {}, SP: {}".format(self.monster_hp, self.monster_hp,
-																							self.monster_dp, self.monster_sp)
+		return "HP: {}/{}, DP: {}, SP: {}".format(self.hp, self.hp,
+																							self.dp, self.sp)

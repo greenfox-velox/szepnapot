@@ -11,13 +11,13 @@ class Boss(Character):
 		self.canvas = canvas
 		self.position = (x, y)
 
-		self.boss_hp = 2 * self.map_level * self.dice() + self.dice()
-		self.boss_dp = self.map_level/2 * self.dice() + self.dice()/2
-		self.boss_sp = self.map_level * self.dice() + self.map_level
+		self.hp = 2 * self.map_level * self.dice() + self.dice()
+		self.dp = self.map_level/2 * self.dice() + self.dice()/2
+		self.sp = self.map_level * self.dice() + self.map_level
 
 	def draw(self):
 		self.texture.draw_img(self.img)
 
 	def __str__(self):
-		return "HP: {}/{}, DP: {}, SP: {}".format(self.boss_hp, self.boss_hp,
-																							self.boss_dp, self.boss_sp)
+		return "HP: {}/{}, DP: {}, SP: {}".format(self.hp, self.hp,
+																							self.dp, self.sp)

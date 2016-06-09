@@ -1,7 +1,5 @@
 from tkinter import *
 from screen import Screen
-from hero import Hero
-from map import Map
 
 WIDTH = 720
 HEIGHT = 740
@@ -9,13 +7,11 @@ HEIGHT = 740
 def main():
 	root = Tk()
 	canvas = Canvas(root, width=WIDTH, height=HEIGHT, bg="white")
-	h = Hero()
-	m = Map(h, canvas)
-	s = Screen(canvas, m, h)
+	s = Screen(canvas)
 	s.draw_map()
 
 	def move(event):
-		m.move_route(event)
+		s.map.move_route(event)
 		s.draw_map()
 
 	canvas.bind("<Key>", move)

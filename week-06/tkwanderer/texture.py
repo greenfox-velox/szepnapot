@@ -10,7 +10,7 @@ class Texture(object):
 		self.position = (x, y)
 
 	def draw_img(self, picture):
-		self.canvas.create_image(self.row * self.size, self.column * self.size, image=picture, anchor=NW)
+		self.canvas.create_image(1 + self.row * self.size, 1 + self.column * self.size, image=picture, anchor=NW)
 
 class Wall(Texture):
 

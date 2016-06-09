@@ -14,6 +14,4 @@ class Character(object):
 	def dice(self):
 		return random.randint(1, 6)
 
-	# def attack(self, position):
-	# 	hero_strike_value = self. + self.dice()*2
 

@@ -6,10 +6,11 @@ class Hero(Character):
 		super().__init__()
 		self.position = {'x': 0, 'y': 0}
 		self.current_img = self.hero_down_img
-		self.hero_max_hp = 20 + 3 + self.dice()
-		self.hero_dp = 2 * self.dice()
-		self.hero_sp = 5 + self.dice()
-		self.current_hp = self.hero_max_hp
+		self.hp = 20 + 3 + self.dice()
+		self.dp = 2 * self.dice()
+		self.sp = 5 + self.dice()
+		self.current_hp = self.hp
+		self.level = 1
 
 	def move_up(self):
 		self.position['y'] -= 1
@@ -28,12 +29,22 @@ class Hero(Character):
 		self.current_img = self.hero_left_img
 
 	def __str__(self):
-		return "HP: {}/{} | DP: {} | SP: {}".format(self.hero_max_hp, self.current_hp,
-																							self.hero_dp, self.hero_sp)
-	# def attack(self):
-	# 	return self.sp + self.d6 * 2
-	#
-	# def level_up(self):
-	# 	self.hero_max_hp += self.d6
-	# 	self.dp += self.d6
-	# 	self.sp += self.d6
+		return "HERO (LEVEL {}) HP: {}/{} | DP: {} | SP: {}".format(self.level, self.hp, self.current_hp,
+																																self.dp, self.sp)
+
+	def get_strike(self, sp):
+		return 2 * self.dice() + sp
+
+	def attack(self, monster):
+		hero_strike_value = self.sp + self.dice()*2
+		monster_strike_value = monster.sp + self.dice()*2
+		if self.get_strike(self.sp) > monster.dp:
+			monster.hp -= hero_strike_value - monster.dp
+		if self.get_strike(monster.sp) > self.dp:
+			self.current_hp -= monster_strike_value - self.dp
+
+	def level_up(self):
+		self.level += 1
+		self.hp += self.dice()
+		self.dp += self.dice()
+		self.sp += self.dice()
