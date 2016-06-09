@@ -1,20 +1,23 @@
 from tkinter import *
-from movement import Move
+from screen import Screen
+from hero import Hero
+from map import Map
 
 WIDTH = 720
-HEIGHT = 720
+HEIGHT = 740
 
 def main():
 	root = Tk()
 	canvas = Canvas(root, width=WIDTH, height=HEIGHT, bg="white")
-	m = Move(canvas)
-	m.screen.draw_map()
+	m = Map()
+	h = Hero(m)
+	s = Screen(canvas, m, h)
+	s.draw_map()
 	def move(event):
-		m.route(event)
-		m.screen.draw_map()
+		h.move_route(event)
+		s.draw_map()
 	canvas.bind("<Key>", move)
 	canvas.pack()
-	print(m.screen.coords.get_map_dict())
 	canvas.focus_set()
 	root.mainloop()
 
