@@ -67,14 +67,18 @@ class Map:
 			for e in range(10):
 				if self.raw_map[i][e] == 0:
 					self.map_texture.append(Tile(self.canvas, e, i))
+
 				elif self.raw_map[i][e] == 1:
 					self.map_texture.append(Wall(self.canvas, e, i))
+
 				elif self.raw_map[i][e] == 3:
 					self.map_texture.append(Tile(self.canvas, e, i))
 					self.map_texture.append(Skeleton(self.map_level, self.canvas, e, i))
+
 				elif self.raw_map[i][e] == 4:
 					self.map_texture.append(Tile(self.canvas, e, i))
 					self.map_texture.append(Boss(self.map_level, self.canvas, e, i))
+
 		return self.map_texture
 
 	def wall_positions(self):

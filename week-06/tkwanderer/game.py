@@ -49,8 +49,12 @@ class Game(object):
 			self.hero.current_hp = self.hero.hp
 		elif self.random_chance() >= 60:
 			self.hero.current_hp += self.hero.current_hp // 3
+			if self.hero.current_hp > self.hero.hp:
+				self.hero.current_hp = self.hero.hp
 		else:
 			self.hero.current_hp += self.hero.current_hp // 10
+			if self.hero.current_hp > self.hero.hp:
+				self.hero.current_hp = self.hero.hp
 
 	def move_route(self, key):
 		pressed_key = key.keysym

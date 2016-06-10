@@ -1,37 +1,35 @@
-import sys, getopt
+import sys
+import getopt
 
-class Routing():
-	"""parse cml arguments
-	give proper call to controller"""
+class Parser():
+	"""parse cml arguments,give proper call to controller"""
 
 	def __init__(self, argv):
-		self.options_short = "larc:d"
-		self.options_long = ["list", "add", "remove", "complete"]
 		self.argv = argv
-		self.validator()
+		self.options_short = "larc"
+		self.opt = None
+		self.passed_arg = None
+		if self.arg_validator(self.argv) != getopt.GetoptError:
+			self.arg_parser()
 
-	def validator(self):
+	def arg_validator(self, argv):
 		try:
-			self.opts, self.args = getopt.getopt(self.argv, self.options_short, self.options_long)
-		except getopt.GetoptError or len(self.argv) < 1:
+			self.opts, self.args = getopt.getopt(argv, self.options_short)
+			return self.opts, self.args
+		except getopt.GetoptError or len(argv) < 1:
 			return getopt.GetoptError
-		return self.opts, self.args
 
-	def route(self):
+	def arg_parser(self):
 		for opt, arg in self.opts:
-			if opt in ("-l", "--list"):
-				return "-l"
-			elif opt in ("-a", "--add"):
-				try:
-					return "-a", arg[0]
-				except IndexError:
-					print("Unable to add: No task is provided")
-			elif opt in ("-r", "--remove"):
-				try:
-					return "-r", int(arg[0])
-				except IndexError:
-					print("Unable to add: No task is provided")
-				except ValueError:
-					print("Unable to remove: Index is out of bound")
-			elif opt in ("-c", "--complete"):
-				pass
+			if opt in ("-a", "-r", "-c"):
+					try:
+						self.passed_arg = arg[0]
+						self.opt = opt
+						return self.opt, self.passed_arg
+					except IndexError:
+						return "Unable to complete request: No task is provided"
+			else:
+				return Exception
+
+p = Parser(sys.argv[1:])
+print(p.passed_arg)
