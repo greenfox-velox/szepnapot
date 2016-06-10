@@ -6,8 +6,20 @@
 
 [**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
 
-## Student presentations I've done so far:
+### Student presentations I've done so far:
 
+* [Character encodings](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/encoding_presentation.odt)
+
+* RegEx
+  * [Presentation](https://docs.google.com/presentation/d/1rSTxrgypsfQBBjR67x0NfV_KKyiN7quVCnTP3us1A54/edit?usp=sharing)
+  * [Python example](https://github.com/greenfox-velox/szepnapot/tree/master/student_presentations/regex_example)
+
+* JSON
+  * [Presentation](https://docs.google.com/presentation/d/1f_k8G4CEy04zotgXpWH4ykGVRhC7Yz7dtXNSCD98pmA/edit?usp=sharing)
+  * [Python example](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/json_example.py)
+
+* Functional Python
+  * [Map, filter, lambda, list comprehension examples](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/functional_examples.py)
 
 ### Week 1
 
