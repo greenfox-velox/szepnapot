@@ -6,6 +6,8 @@
 
 [**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
 
+## Student presentations I've done so far:
+
 
 ### Week 1
 
@@ -177,11 +179,6 @@
 * Inheritance
 
 * Basic OOP concepts
-
-### Student presentation I made this week:
-
-*Functional Python, cool built-ins*
-[Example file]
 
 ### Programs created this week:
 
