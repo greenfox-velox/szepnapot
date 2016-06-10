@@ -38,4 +38,4 @@ class Screen(object):
 
 	def draw_end_screen(self):
 		self.canvas.delete('all')
-		self.canvas.create_text(300, 350, text="You died", anchor=NSEW, font=self.font_game_over, fill="red")
+		self.canvas.create_text(300, 350, text="You died", anchor=NW, font=self.font_game_over, fill="red")

@@ -7,14 +7,16 @@ class Map:
 
 	def __init__(self, hero, canvas):
 		self.canvas = canvas
-		self.map_level = 1
+		self.map_level = 0
+		self.generate_level()
+		self.hero = hero
 
+	def generate_level(self):
+		self.map_level += 1
 		self.gen_map()
 		self.generate_monster_pos(3)
 		self.generate_boss_pos()
 		self.make_map_texture()
-
-		self.hero = hero
 
 	def gen_map(self):
 		self.raw_map = [[0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
@@ -81,6 +83,9 @@ class Map:
 	def monster_positions(self):
 		return [i.position for i in self.map_texture if type(i) == Skeleton or type(i) == Boss]
 
+	def boss_position(self):
+		return [i for i in self.map_texture if type(i) == Boss]
+
 	def get_monster(self):
 		return [i for i in self.map_texture if i.position == (self.hero.position['x'], self.hero.position['y']) \
 					 and type(i) != Tile]
@@ -88,9 +93,15 @@ class Map:
 	def is_monster_dead(self, monster):
 		return monster.hp <= 0
 
+	def is_boss_dead(self, monster):
+		if monster.position == self.boss_position()[0].position:
+			return self.is_monster_dead(monster)
+
 	def combat(self):
 		monster = self.get_monster()[0]
 		self.hero.attack(monster)
+		if self.is_boss_dead(monster):
+			self.generate_level()
 		if self.is_monster_dead(monster):
 			self.map_texture.remove(monster)
 			self.hero.level_up()
@@ -128,6 +139,6 @@ class Map:
 		return True
 
 	def is_valid_attack(self):
-		if (self.hero.position['x'], self.hero.position['y']) in self.monster_positions():
+		if (self.hero.position['x'], self.hero.position['y']) in self.monster_positions() + self.boss_position():
 			return True
 		return False
