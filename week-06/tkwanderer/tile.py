@@ -1,5 +1,4 @@
 from tkinter import PhotoImage
-from map import Map
 
 class Tile(object):
 

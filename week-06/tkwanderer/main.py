@@ -1,5 +1,5 @@
 from tkinter import *
-from screen import Screen
+from game import Game
 
 WIDTH = 720
 HEIGHT = 740
@@ -7,7 +7,7 @@ HEIGHT = 740
 def main():
 	root = Tk()
 	canvas = Canvas(root, width=WIDTH, height=HEIGHT, bg="white")
-	s = Screen(canvas)
+	s = Game(canvas)
 	s.draw_map()
 
 	def move(event):

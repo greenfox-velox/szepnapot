@@ -6,7 +6,7 @@ from hero import Hero
 from skeleton import Skeleton
 
 
-class Screen(object):
+class Game(object):
 
 	def __init__(self, canvas):
 		self.canvas = canvas
