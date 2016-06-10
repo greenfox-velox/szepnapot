@@ -166,6 +166,26 @@
 * [CLI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_app.py)
 * [GUI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_gui.py)
 
+## Week 6
+
+[**Week 6 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-06)
+
+### Overview about the week:
+
+* Classes
+
+* Inheritance
+
+* Basic OOP concepts
+
+### Student presentation I made this week:
+
+*Functional Python, cool built-ins*
+[Example file]
+
+### Programs created this week:
+
+* [TkWanderer](https://github.com/greenfox-velox/szepnapot/tree/master/week-06/tkwanderer)
 
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
