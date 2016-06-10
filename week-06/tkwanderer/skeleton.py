@@ -9,7 +9,7 @@ class Skeleton(Character):
 		self.texture = Texture(canvas, x, y)
 		self.img = self.skeleton_img
 		self.canvas = canvas
-		self.position = (x, y)
+		self.position = {'x': x, 'y': y}
 
 		self.hp = 2 * self.map_level * self.dice()
 		self.dp = self.map_level/2 * self.dice()
@@ -19,5 +19,5 @@ class Skeleton(Character):
 		self.texture.draw_img(self.img)
 
 	def __str__(self):
-		return "HP: {}/{}, DP: {}, SP: {}".format(self.hp, self.hp,
+		return "(SKELETON) HP: {} | DP: {} | SP: {}".format(self.hp,
 																							self.dp, self.sp)

@@ -7,7 +7,7 @@ class Texture(object):
 		self.column = y
 		self.canvas = canvas
 		self.size = 72
-		self.position = (x, y)
+		self.position = {'x': x, 'y': y}
 
 	def draw_img(self, picture):
 		self.canvas.create_image(1 + self.row * self.size, 1 + self.column * self.size, image=picture, anchor=NW)

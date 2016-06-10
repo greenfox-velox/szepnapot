@@ -11,7 +11,8 @@ def main():
 	s.draw_map()
 
 	def move(event):
-		s.map.move_route(event)
+		s.move_route(event)
+		canvas.delete('all')
 		s.draw_map()
 
 	canvas.bind("<Key>", move)

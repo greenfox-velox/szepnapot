@@ -14,7 +14,7 @@ class Map:
 	def generate_level(self):
 		self.map_level += 1
 		self.gen_map()
-		self.generate_monster_pos(3)
+		self.generate_monster_pos(self.get_monster_quantity())
 		self.generate_boss_pos()
 		self.make_map_texture()
 
@@ -33,6 +33,9 @@ class Map:
 
 	def random_pos(self):
 		return random.randint(0, 9)
+
+	def get_monster_quantity(self):
+		return random.randint(3, 5)
 
 	def generate_monster_pos(self, count):
 		m = 0
@@ -87,50 +90,11 @@ class Map:
 		return [i for i in self.map_texture if type(i) == Boss]
 
 	def get_monster(self):
-		return [i for i in self.map_texture if i.position == (self.hero.position['x'], self.hero.position['y']) \
+		return [i for i in self.map_texture if i.position == self.hero.position \
 					 and type(i) != Tile]
 
-	def is_monster_dead(self, monster):
-		return monster.hp <= 0
-
-	def is_boss_dead(self, monster):
-		if monster.position == self.boss_position()[0].position:
-			return self.is_monster_dead(monster)
-
-	def combat(self):
-		monster = self.get_monster()[0]
-		self.hero.attack(monster)
-		if self.is_boss_dead(monster):
-			self.generate_level()
-		if self.is_monster_dead(monster):
-			self.map_texture.remove(monster)
-			self.hero.level_up()
-
-	def move_route(self, key):
-		pressed_key = key.keysym
-		if pressed_key == 'Up':
-			self.hero.move_up()
-			if not self.is_valid_move():
-				self.hero.move_down()
-		elif pressed_key == 'Down':
-			self.hero.move_down()
-			if not self.is_valid_move():
-				self.hero.move_up()
-		elif pressed_key == 'Right':
-			self.hero.move_right()
-			if not self.is_valid_move():
-				self.hero.move_left()
-		elif pressed_key == 'Left':
-			self.hero.move_left()
-			if not self.is_valid_move():
-				self.hero.move_right()
-		elif pressed_key == 'space':
-			if self.is_valid_attack():
-				self.combat()
-
-
 	def is_valid_move(self):
-		if (self.hero.position['x'], self.hero.position['y']) in self.wall_positions():
+		if self.hero.position in self.wall_positions():
 			return False
 		if not self.hero.position['x'] in range(10):
 			return False
@@ -139,6 +103,6 @@ class Map:
 		return True
 
 	def is_valid_attack(self):
-		if (self.hero.position['x'], self.hero.position['y']) in self.monster_positions() + self.boss_position():
+		if self.hero.position in self.monster_positions() + self.boss_position():
 			return True
 		return False

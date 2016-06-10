@@ -29,7 +29,7 @@ class Hero(Character):
 		self.current_img = self.hero_left_img
 
 	def __str__(self):
-		return "HERO (LEVEL {}) HP: {}/{} | DP: {} | SP: {}".format(self.level, self.hp, self.current_hp,
+		return "(HERO) LVL: {} | HP: {}/{} | DP: {} | SP: {}".format(self.level, self.hp, self.current_hp,
 																																self.dp, self.sp)
 
 	def get_strike(self, sp):
