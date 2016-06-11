@@ -6,20 +6,21 @@
 
 [**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
 
+___
+
 ### Student presentations I've done so far:
 
 * [Character encodings](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/encoding_presentation.odt)
-
 * RegEx
   * [Presentation](https://docs.google.com/presentation/d/1rSTxrgypsfQBBjR67x0NfV_KKyiN7quVCnTP3us1A54/edit?usp=sharing)
   * [Python example](https://github.com/greenfox-velox/szepnapot/tree/master/student_presentations/regex_example)
-
 * JSON
   * [Presentation](https://docs.google.com/presentation/d/1f_k8G4CEy04zotgXpWH4ykGVRhC7Yz7dtXNSCD98pmA/edit?usp=sharing)
   * [Python example](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/json_example.py)
-
 * Functional Python
   * [Map, filter, lambda, list comprehension examples](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/functional_examples.py)
+
+___
 
 ### Week 1
 
@@ -30,15 +31,10 @@
 ### Short list, overview about week expectations
 
 * Create, open, modify files using the editor
-
 * Internet basics
-
 * Command Line basics
-
 * Git basics
-
 * Developer tools (page source, inspect)
-
 * HTML+CSS
 
 ### Assignments and solutions
@@ -63,6 +59,7 @@
 
 [CV Anakin template](https://szepnapot.github.io/anakin "Anakin CV")
 
+___
 
 ## Week 2:
 
@@ -73,15 +70,10 @@
 ### Short list, overview about week expectations
 
 * Layout elements in a build
-
 * Understand pseudo elements
-
 * Form
-
 * Colors and styling
-
 * Write clean CSS file
-
 * Write semantic HTML file (SEO)
 
 ### Assignments, solutions
@@ -100,6 +92,7 @@
 
 [my work](https://szepnapot.github.io/wikipage)
 
+___
 
 ## Week 3
 
@@ -121,6 +114,8 @@
 * [List unite](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/union.py)
 * [Unused digits filter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-4/filter_unused_digits.py)
 
+___
+
 ## Week 4
 
 [**week 4 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-04)
@@ -128,9 +123,7 @@
 ### Overview about the week:
 
 * Recursive functions
-
 * Tkinter
-
 * Fractal drawing
 
 ### Programs created this week:
@@ -154,6 +147,8 @@
 * [Triangle fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/triangle_fractal.py)
 * [Hexagon fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/hexagon_fractal.py)
 
+___
+
 ## Week 5
 
 [**Week 5 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-05)
@@ -161,11 +156,8 @@
 ### Overview about the week:
 
 * Basic TDD principles
-
 * Unittesting
-
 * Story driven development
-
 * CLI
 
 ### Programs created this week:
@@ -180,21 +172,26 @@
 * [CLI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_app.py)
 * [GUI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_gui.py)
 
+___
+
 ## Week 6
 
 [**Week 6 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-06)
 
+<p align="center">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-06/tkwanderer/tkwanderer.png" alt="Gameplay picture" height=400px>
+</p>
+
 ### Overview about the week:
 
 * Classes
-
 * Inheritance
-
 * Basic OOP concepts
 
 ### Programs created this week:
 
 * [TkWanderer](https://github.com/greenfox-velox/szepnapot/tree/master/week-06/tkwanderer)
+___
 
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
