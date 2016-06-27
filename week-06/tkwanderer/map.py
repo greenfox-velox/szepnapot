@@ -97,6 +97,20 @@ class Map:
 		return [i for i in self.map_texture if i.position == self.hero.position \
 					 and type(i) != Tile]
 
+	# def move_monsters(self):
+	# 	for monster in self.map_texture:
+	# 		if type(monster) == Skeleton or type(monster) == Boss:
+	# 			monster.position['x'] += 1
+	# 			if monster.position in self.wall_positions():
+	# 				monster.position['x'] -= 2
+	# 				if monster.position in self.wall_positions():
+	# 					monster.position['x'] += 1
+	# 					monster.position['y'] += 1
+	# 					if monster.position in self.wall_positions():
+	# 						monster.position['y'] -= 2
+	# 	self.make_map_texture()
+
+
 	def is_valid_move(self):
 		if self.hero.position in self.wall_positions():
 			return False

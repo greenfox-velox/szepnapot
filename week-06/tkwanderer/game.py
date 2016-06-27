@@ -57,6 +57,11 @@ class Game(object):
 				self.hero.current_hp = self.hero.hp
 
 	def move_route(self, key):
+		# if self.hero.move_count == 2:
+		# 	print("move")
+		# 	self.map.move_monsters()
+		# 	self.draw_map()
+		# 	self.hero.move_count = 0
 		pressed_key = key.keysym
 		if pressed_key == 'Up':
 			self.hero.move_up()
