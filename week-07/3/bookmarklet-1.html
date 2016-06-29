@@ -5,7 +5,7 @@
   <title>Workshop: Bookmarklets</title>
 </head>
 <body>
-  <a href="javascript:var allH1 = document.querySelectorAll('h1');for (var i = 0; i < allH1.length; i++) { console.log(allH1[i]);allH1[i].textContent = 'Green Fox Academy Conquers the World';};">
+  <a href="javascript:function() {var allH1 = document.querySelectorAll('h1');for (var i = 0; i < allH1.length; i++) { console.log(allH1[i]);allH1[i].textContent = 'Green Fox Academy Conquers the World';};}()">
     Bookmarklet 1
   </a>
   <h1>Antoine de Saint-Exupery's 110th Birthday</h1>

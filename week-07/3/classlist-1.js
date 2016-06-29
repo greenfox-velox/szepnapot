@@ -10,4 +10,4 @@ if (document.querySelector('.apple')) { allP[2].textContent = 'dog'; }
 // Make apple red
 allP[0].classList += ' red';
 // Make balloon less balloon-like
-allP[1].classList = 'ballon-no-style';
+allP[1].classList.toggle('balloon');
