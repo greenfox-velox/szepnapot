@@ -18,7 +18,7 @@ function string2float(str) {
   var outFloat = 0;
   outFloat += parseString(numDict, wholePart);
   outFloat += parseString(numDict, complexPart) / Math.pow(10, complexPart.length);
-  return outFloat
+  return outFloat;
 }
 
 console.log(string2float('121423.458'));
