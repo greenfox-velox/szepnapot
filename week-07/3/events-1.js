@@ -3,7 +3,6 @@ var button = document.querySelector('button');
 
  function buttonOnOff (event) {
    var div = document.querySelector('div');
-   console.log(event);
    div.classList.toggle('party');
  }
  button.addEventListener('click', buttonOnOff);

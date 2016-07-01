@@ -21,4 +21,4 @@ function string2float(str) {
   return outFloat;
 }
 
-console.log(string2float('121423.458'));
+console.log(string2float('12.24'));
