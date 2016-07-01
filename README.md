@@ -1,10 +1,13 @@
 
-# [GreenFox Academy](http://www.greenfoxacademy.com/)
+# [GreenFox Academy](http://www.greenfoxacademy.com/) ![Green Fox logo](https://tinyurl.com/hgzse3j "Logo")
 ## Velox class 
 
 
 
 [**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
+
+### Menu:
+[Week 1](#week-1)
 
 ___
 
@@ -21,6 +24,21 @@ ___
   * [Map, filter, lambda, list comprehension examples](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/functional_examples.py)
 
 ___
+
+
+### Demo presentations:
+
+* [Week 1](https://docs.google.com/presentation/d/1PM6Eayb9BXTDy69MFoAZHfiX8TIiN6_QuqSDGLdJrts/edit#slide=id.p)
+* [Week 2](https://docs.google.com/presentation/d/1CMtllKuokcygyw-uamaQ6x6i4huN50GDuM_3EU3aSHc/edit)
+* [Week 3](https://docs.google.com/presentation/d/1tQe1w1sf_y8QbWf7I7EHIgcho0jAdlkrMIB_Rd834g0/edit)
+* [Week 4](https://docs.google.com/presentation/d/1cOPr6_voZJJgZRSpN7h36HnqowjGaASq_W-m0oRnyrI/edit)
+* [Week 5](https://docs.google.com/presentation/d/1LRLqYruv31fHqmOK1UvPdF6ZRFnvBhkEtzrxsZAQPyU/edit)
+* [Week 6](https://docs.google.com/presentation/d/1HWVIaXus-a4KwcDxbUPyAJgPQiipzBCILcuBkmyawxM/edit)
+* [Week 7](https://docs.google.com/presentation/d/1G6gCN6ngTN3lB3InKD7iLmwI9IMo5K-8fOTwOnmK0G8/edit)
+
+
+___
+
 
 ### Week 1
 
@@ -194,13 +212,38 @@ ___
 
 ___
 
+## Week 7
+
+[**Week 7 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-07)
+
+<p align="center">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-07/gallery-project/gallery_snapshot.png" alt="Gallery preview" height=400px>
+</p>
+
+### Overview about the week:
+
+* Basic JS
+* Modify DOM with JS
+
+### Programs created this week:
+
+* [Float2String](https://github.com/greenfox-velox/szepnapot/blob/master/week-07/2-JS-basics/float2string.js)
+* [String2Float](https://github.com/greenfox-velox/szepnapot/blob/master/week-07/2-JS-basics/string2float.js)
+* [Int2Roman](https://github.com/greenfox-velox/szepnapot/blob/master/week-07/2-JS-basics/int2roman.js)
+* [Gallery](https://github.com/greenfox-velox/szepnapot/tree/master/week-07/gallery-project)
+
+[**Live version of the gallery**](https://szepnapot.github.io/gallery/index-beta.html)
+
+
+___
+
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
-  <img src="https://cdn-images-1.medium.com/max/800/1*5ztbgEt4NqpVaxTc64C-XA.png" alt="Medium logo">
+  <img src="https://cdn-images-1.medium.com/max/800/1*5ztbgEt4NqpVaxTc64C-XA.png" alt="Medium logo" width=500px>
   </a>
 
   <a href="http://www.codewars.com/users/szepnapot" target="_blank">
-  <img src="https://d2gn4xht817m0g.cloudfront.net/p/product_screenshots/images/preview505/000/155/390/155390-0e6082933ef0647e22246e2791de61a46afb1ec1.jpg?1364103310">
+  <img src="https://d2gn4xht817m0g.cloudfront.net/p/product_screenshots/images/preview505/000/155/390/155390-0e6082933ef0647e22246e2791de61a46afb1ec1.jpg?1364103310" height=300px>
   </a>
 </p>
 <p align="center">
