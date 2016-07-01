@@ -6,7 +6,9 @@
 
 [**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
 
-### Menu:
+## Navigation
+
+
 [Week 1](#week-1)
 
 ___
