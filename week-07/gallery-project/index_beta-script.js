@@ -16,7 +16,7 @@ var Images = createImageArray();
 function createImageArray() {
   var imageList = [];
   for (var i = 1; i <= 16; i++) {
-    imageList.push('images/img' + i + '.jpg');
+    imageList.push('./images/img' + i + '.jpg');
   }
   return imageList;
 }
