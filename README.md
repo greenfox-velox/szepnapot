@@ -42,7 +42,7 @@ ___
 ___
 
 
-### Week 1
+## Week 1
 
 [**week 1 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-01)
 
