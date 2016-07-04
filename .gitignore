@@ -51,7 +51,7 @@ codewars/
 
 package.json
 
-node-modules
+node_modules/
 
 .gitignore
 
