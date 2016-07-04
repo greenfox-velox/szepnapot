@@ -48,3 +48,11 @@ codewars/
 .idea
 
 /.idea
+
+package.json
+
+node-modules
+
+.gitignore
+
+.eslintrc.js
