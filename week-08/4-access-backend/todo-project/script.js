@@ -92,10 +92,21 @@ function postContent(data) {
 }
 
 function deleteContent(id) {
-  xhr.open('DELETE', 'https://mysterious-dusk-8248.herokuapp.com/todos', true);
+  xhr.open('DELETE', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + id, true);
   xhr.setRequestHeader("Accept",'application/json');
-  let deleteObject = {'id': id};
-  xhr.send(JSON.stringify(deleteObject));
+  let deleteObject = {};
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200 || 201 || 202 || 304 )
+        { getContent();}
+       else {
+        console.log('Error: ' + xhr.status);
+      }
+    }
+  };
+  // deleteObject.id = id;
+  // xhr.send(JSON.stringify(deleteObject));
+  xhr.send(null);
 }
 
 
