@@ -1,0 +1,64 @@
+$body-color: #50e3c2;
+$todo-color: #f7f7f7;
+$button-color: #ffffff;
+$todoText-color: #ABABAB;
+$pink: #df69e8;
+
+$font-todo: Lato, sans-serif;
+$font-heading: Lato, sans-serif;
+$fontSize-heading: 64px;
+$fontSize-todo: 26px;
+
+body {
+  background: $body-color;
+  font: $font-todo;
+}
+
+.container {
+  margin: 50px auto;
+  width: 450px;
+  background: $todo-color;
+  color: $todoText-color;
+}
+
+.app {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  font-size: $font-heading;
+  font: $font-todo;
+  padding: 30px 0;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  height: 40px;
+}
+
+input,
+button {
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  height: 40px;
+}
+
+button {
+  border: none;
+  font-size: $fontSize-todo;
+  font: $font-todo;
+  background: $pink;
+  color: white;
+}
+
+ul {
+  font: $font-todo;
+  color: $todoText-color;
+  list-style-type: none;
+  padding: 0 0 40px 0;
+}
