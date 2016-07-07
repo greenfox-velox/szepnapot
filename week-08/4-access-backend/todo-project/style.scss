@@ -61,4 +61,21 @@ ul {
   color: $todoText-color;
   list-style-type: none;
   padding: 0 0 40px 0;
+  line-height: 1.5em;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.option-delete,
+.option-check {
+  border: 1px solid black;
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: aqua;
 }
