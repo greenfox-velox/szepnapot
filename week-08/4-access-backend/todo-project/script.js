@@ -41,7 +41,7 @@ function refreshList() {
 function appendToDo(object, parent) {
   if (object.text.length < 1) { return ;}
   todoElement = document.createElement('li');
-  todoElement.textContent = object.text;
+  todoElement.innerHTML = '<span>' + object.text + '</span>';
   todoElement.className = object.id;
   todoElement.completed = object.completed;
   parent.appendChild(todoElement);
@@ -56,12 +56,6 @@ function printTodos() {
   }
   app.appendChild(todoList);
 }
-
-// function makeRequest(type, url, data, cb) {
-//   xhr.open(type, url, true);
-//   if (type === 'GET') { xhr.responseType = 'json'; }
-//
-// }
 
 function getContent() {
   xhr.open('GET', 'https://mysterious-dusk-8248.herokuapp.com/todos', true);
@@ -101,7 +95,6 @@ function postContent(data) {
 function deleteContent(id) {
   xhr.open('DELETE', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + id, true);
   xhr.setRequestHeader("Accept",'application/json');
-  let deleteObject = {};
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || 201 || 202 || 304 )
@@ -129,15 +122,16 @@ function completeTask(object, id) {
   };
 }
 
-
 function deleteTodo(event) {
+  event.preventDefault();
   let target = event.currentTarget;
   let id = target.parentNode.parentNode.className;
   deleteContent(id);
 }
 
-function completeTodo(event) {;
-  let taskToComplete = {}
+function completeTodo(event) {
+  event.preventDefault();
+  let taskToComplete = {};
   let targetTask = event.currentTarget.parentNode.parentNode;
   taskToComplete.id = targetTask.className;
   taskToComplete.text = targetTask.textContent;
@@ -149,11 +143,18 @@ function addTodo(event) {
   event.preventDefault();
   let form = document.querySelector('form');
   let taskToAdd = document.querySelector('input').value;
+  if (taskToAdd.length < 1) { return; }
   form.reset();
   let task = {};
   task.text = taskToAdd;
   postContent(JSON.stringify(task));
 
 }
+
 getContent();
-addButton.addEventListener('click', addTodo)
+
+addButton.addEventListener('click', addTodo);
+
+setTimeout(function(){
+   getContent();
+}, 10000);

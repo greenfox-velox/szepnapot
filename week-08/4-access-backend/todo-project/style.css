@@ -7,7 +7,8 @@ body {
   width: 450px;
   background: #f7f7f7;
   color: #ABABAB;
-  font: Lato, sans-serif;
+  font-family: Lato, sans-serif;
+  box-shadow: 0px 0px 107px 8px #f50cd2;
 }
 
 .app {
@@ -34,7 +35,8 @@ input,
 button {
   box-sizing: border-box;
   flex: 1 0 auto;
-  height: 40px;
+  height: 50px;
+  width: 80%;
 }
 
 button {
@@ -42,6 +44,7 @@ button {
   font-size: 26px;
   background: #df69e8;
   color: white;
+  width: 20%;
 }
 
 ul {
@@ -56,9 +59,23 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
   position: relative;
   font-size: 26px;
   max-height: 70px;
+}
+
+li:checked {
+  color: grey;
+}
+
+span:hover {
+  background: pink;
+}
+
+.options {
+  min-width: 67px;
 }
 
 .option-delete,
@@ -70,6 +87,10 @@ li {
 
 .option-delete {
   background: url("bin.png") no-repeat center;
+}
+
+.option-delete:hover {
+  transform: rotateZ(-30deg);
 }
 
 .option-check {
