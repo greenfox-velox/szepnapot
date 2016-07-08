@@ -1,1 +1,77 @@
-body{background:#50e3c2;font:Lato,sans-serif}.container{margin:50px auto;width:450px;background:#f7f7f7;color:#ABABAB}.app{width:80%;height:auto;margin:0 auto;text-align:left}h1{text-align:center;font-size:Lato,sans-serif;font:Lato,sans-serif;padding:30px 0;margin:0}form{display:flex;height:40px}input,button{box-sizing:border-box;flex:1 0 auto;height:40px}button{border:none;font-size:26px;font:Lato,sans-serif;background:#df69e8;color:white}ul{font:Lato,sans-serif;color:#ABABAB;list-style-type:none;padding:0 0 40px 0;line-height:1.5em}li{display:flex;flex-direction:row;justify-content:space-between}.option-delete,.option-check{border:1px solid black;display:inline-block;width:20px;height:18px;background:aqua}
+body {
+  background: #50e3c2;
+}
+
+.container {
+  margin: 50px auto;
+  width: 450px;
+  background: #f7f7f7;
+  color: #ABABAB;
+  font: Lato, sans-serif;
+}
+
+.app {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 300;
+  padding: 30px 0;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  height: 40px;
+}
+
+input,
+button {
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  height: 40px;
+}
+
+button {
+  border: none;
+  font-size: 26px;
+  background: #df69e8;
+  color: white;
+}
+
+ul {
+  font: Lato, sans-serif;
+  color: #ABABAB;
+  list-style-type: none;
+  padding: 0 0 40px 0;
+  line-height: 2.2em;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  font-size: 26px;
+  max-height: 70px;
+}
+
+.option-delete,
+.option-check {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+}
+
+.option-delete {
+  background: url("bin.png") no-repeat center;
+}
+
+.option-check {
+  border-radius: 50%;
+}

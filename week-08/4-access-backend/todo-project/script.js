@@ -1,19 +1,21 @@
 var xhr = new XMLHttpRequest();
 var addButton = document.querySelector('button');
 var app = document.querySelector('.app');
-console.log(app);
 var responseObject;
 
-function addOptionsToTask(parent){
-  let options = createOptions();
-  parent.appendChild(options);
+function addOptionsToTask(task){
+  let options = createOptions(task);
+  task.appendChild(options);
 }
 
-function createOptions() {
-  let menu = createDivWithClass('options')
-  let del = createDivWithClass('option-delete')
-  let check = createDivWithClass('option-check')
-  addEventTo(del, deleteTodo)
+function createOptions(task) {
+  let menu = createNodeWithClass('div','options')
+  let del = createNodeWithClass('div','option-delete')
+  let check = createNodeWithClass('input','option-check')
+  check.type = 'checkbox';
+  check.checked = task.completed;
+  addEventTo(del, deleteTodo);
+  addEventTo(check, completeTodo);
   menu.appendChild(del);
   menu.appendChild(check);
   return menu;
@@ -23,10 +25,10 @@ function addEventTo(element, func) {
   element.addEventListener('click', func);
 }
 
-function createDivWithClass(className) {
-  let div = document.createElement('div');
-  div.className = className;
-  return div;
+function createNodeWithClass(elementType, className) {
+  let element = document.createElement(elementType);
+  element.className = className;
+  return element;
 }
 
 function refreshList() {
@@ -41,6 +43,7 @@ function appendToDo(object, parent) {
   todoElement = document.createElement('li');
   todoElement.textContent = object.text;
   todoElement.className = object.id;
+  todoElement.completed = object.completed;
   parent.appendChild(todoElement);
   addOptionsToTask(todoElement);
 }
@@ -54,7 +57,11 @@ function printTodos() {
   app.appendChild(todoList);
 }
 
-
+// function makeRequest(type, url, data, cb) {
+//   xhr.open(type, url, true);
+//   if (type === 'GET') { xhr.responseType = 'json'; }
+//
+// }
 
 function getContent() {
   xhr.open('GET', 'https://mysterious-dusk-8248.herokuapp.com/todos', true);
@@ -104,21 +111,45 @@ function deleteContent(id) {
       }
     }
   };
-  // deleteObject.id = id;
-  // xhr.send(JSON.stringify(deleteObject));
   xhr.send(null);
+}
+
+function completeTask(object, id) {
+  xhr.open('PUT', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + id, true);
+  xhr.setRequestHeader("content-type",'application/json');
+  xhr.send(JSON.stringify(object));
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200 || 201 || 202 || 304 )
+        { getContent();}
+       else {
+        console.log('Error: ' + xhr.status);
+      }
+    }
+  };
 }
 
 
 function deleteTodo(event) {
   let target = event.currentTarget;
-  let idToDelete = target.parentNode.parentNode.className;
-  deleteContent(idToDelete);
+  let id = target.parentNode.parentNode.className;
+  deleteContent(id);
+}
+
+function completeTodo(event) {;
+  let taskToComplete = {}
+  let targetTask = event.currentTarget.parentNode.parentNode;
+  taskToComplete.id = targetTask.className;
+  taskToComplete.text = targetTask.textContent;
+  taskToComplete.completed = event.currentTarget.checked;
+  completeTask(taskToComplete, taskToComplete.id);
 }
 
 function addTodo(event) {
   event.preventDefault();
+  let form = document.querySelector('form');
   let taskToAdd = document.querySelector('input').value;
+  form.reset();
   let task = {};
   task.text = taskToAdd;
   postContent(JSON.stringify(task));

@@ -4,14 +4,12 @@ $button-color: #ffffff;
 $todoText-color: #ABABAB;
 $pink: #df69e8;
 
-$font-todo: Lato, sans-serif;
-$font-heading: Lato, sans-serif;
+$font: Lato, sans-serif;
 $fontSize-heading: 64px;
 $fontSize-todo: 26px;
 
 body {
   background: $body-color;
-  font: $font-todo;
 }
 
 .container {
@@ -19,6 +17,7 @@ body {
   width: 450px;
   background: $todo-color;
   color: $todoText-color;
+  font: $font;
 }
 
 .app {
@@ -30,8 +29,8 @@ body {
 
 h1 {
   text-align: center;
-  font-size: $font-heading;
-  font: $font-todo;
+  font-size: $fontSize-heading;
+  font-weight: 300;
   padding: 30px 0;
   margin: 0;
 }
@@ -51,31 +50,44 @@ button {
 button {
   border: none;
   font-size: $fontSize-todo;
-  font: $font-todo;
   background: $pink;
   color: white;
 }
 
 ul {
-  font: $font-todo;
+  font: $font;
   color: $todoText-color;
   list-style-type: none;
   padding: 0 0 40px 0;
-  line-height: 1.5em;
+  line-height: 2.2em;
 }
 
 li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  font-size: $fontSize-todo;
+  max-height: 70px;
 }
-
+// 
+// .options {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+// }
 
 .option-delete,
 .option-check {
-  border: 1px solid black;
   display: inline-block;
-  width: 20px;
-  height: 18px;
-  background: aqua;
+  width: 30px;
+  height: 100%;
+}
+
+.option-delete {
+  background: url('bin.png') no-repeat center ;
+}
+
+.option-check {
+  border-radius: 50%;
 }
