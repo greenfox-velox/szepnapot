@@ -59,7 +59,7 @@ function createNewTask(type, object) {
 }
 
 function updateList(object) {
-  console.log(object.id);
+
   let task = createNewTask(object);
   addTaskToList(task);
 }
@@ -74,7 +74,7 @@ function makeRequest(type, endpoint, data, cb) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || 201 || 202 || 304 )
         {
-          cb(xhr.response);
+          cb(null, xhr.response);
         }
        else {
         console.log('Error: ' + xhr.status);
@@ -86,7 +86,7 @@ function makeRequest(type, endpoint, data, cb) {
 
 
 function loadContent() {
-  makeRequest('GET', '', null, function(response) { initTasks(response)})
+  makeRequest('GET', '', null, function(err, cont) { initTasks(cont)})
 }
 
 loadContent()
