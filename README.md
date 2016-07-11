@@ -251,6 +251,19 @@ ___
 
 ___
 
+## Week 8
+
+[**Week 8 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-08)
+
+<p align="center">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-08/4-access-backend/todo-project/todo_preview.png" alt="Gallery preview" height=400px>
+</p>
+
+### Programs created this week:
+
+
+
+
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
   <img src="https://cdn-images-1.medium.com/max/800/1*5ztbgEt4NqpVaxTc64C-XA.png" alt="Medium logo" width=500px>
