@@ -96,7 +96,9 @@ ___
 
 [CV Anakin template](https://szepnapot.github.io/anakin "Anakin CV")
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 2:
