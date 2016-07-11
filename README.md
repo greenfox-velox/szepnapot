@@ -132,7 +132,9 @@ ___
 
 [my work](https://szepnapot.github.io/wikipage)
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 3
@@ -155,7 +157,9 @@ ___
 * [List unite](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/union.py)
 * [Unused digits filter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-4/filter_unused_digits.py)
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 4
@@ -189,7 +193,9 @@ ___
 * [Triangle fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/triangle_fractal.py)
 * [Hexagon fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/hexagon_fractal.py)
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 5
@@ -215,7 +221,9 @@ ___
 * [CLI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_app.py)
 * [GUI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_gui.py)
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 6
@@ -236,7 +244,9 @@ ___
 
 * [TkWanderer](https://github.com/greenfox-velox/szepnapot/tree/master/week-06/tkwanderer)
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 7
@@ -261,7 +271,9 @@ ___
 
 [**Live version of the gallery**](https://szepnapot.github.io/gallery/index-beta.html)
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 8
@@ -275,7 +287,11 @@ ___
 ### Programs created this week:
 
 
-[back to top](#navigation)
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
+
+___
 
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
