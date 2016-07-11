@@ -1,3 +1,6 @@
+# Peter Lodri
+
+___
 
 # [GreenFox Academy](http://www.greenfoxacademy.com/) ![Green Fox logo](https://tinyurl.com/hgzse3j "Logo")
 ## Velox class 
@@ -22,6 +25,8 @@
 [Week 6](#week-6)
 
 [Week 7](#week-7)
+
+[Week 8](#week-8)
 
 ___
 
@@ -91,6 +96,9 @@ ___
 
 [CV Anakin template](https://szepnapot.github.io/anakin "Anakin CV")
 
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 2:
@@ -124,6 +132,9 @@ ___
 
 [my work](https://szepnapot.github.io/wikipage)
 
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 3
@@ -146,6 +157,9 @@ ___
 * [List unite](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-1/union.py)
 * [Unused digits filter](https://github.com/greenfox-velox/szepnapot/blob/master/week-03/day-4/filter_unused_digits.py)
 
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 4
@@ -179,6 +193,9 @@ ___
 * [Triangle fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/triangle_fractal.py)
 * [Hexagon fractal](https://github.com/greenfox-velox/szepnapot/blob/master/week-04/5-fractals/hexagon_fractal.py)
 
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 5
@@ -204,6 +221,9 @@ ___
 * [CLI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_app.py)
 * [GUI ToDo app](https://github.com/greenfox-velox/szepnapot/blob/master/week-05/todo_gui.py)
 
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 6
@@ -224,6 +244,9 @@ ___
 
 * [TkWanderer](https://github.com/greenfox-velox/szepnapot/tree/master/week-06/tkwanderer)
 
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 ___
 
 ## Week 7
@@ -248,6 +271,25 @@ ___
 
 [**Live version of the gallery**](https://szepnapot.github.io/gallery/index-beta.html)
 
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
+___
+
+## Week 8
+
+[**Week 8 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-08)
+
+<p align="center">
+  <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-08/4-access-backend/todo-project/todo_preview.png" alt="Gallery preview" height=400px>
+</p>
+
+### Programs created this week:
+
+
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
 
 ___
 
