@@ -26,6 +26,8 @@ ___
 
 [Week 7](#week-7)
 
+[Week 8](#week-8)
+
 ___
 
 ### Student presentations I've done so far:
