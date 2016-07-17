@@ -1,102 +1,131 @@
 'use strict';
 
-
+var logger = require("./logger");
 var fs = require('fs');
-
-function readJSONFile(filename, callback) {
-  fs.readFile(filename, function (err, data) {
-    if(err) {
-      callback(err);
-      return;
-    }
-    try {
-      callback(null, JSON.parse(data));
-    } catch(exception) {
-      callback(exception);
-    }
-  });
-}
-
-function writeToJSON(filename, data, callback) {
-  fs.writeFile(filename,JSON.stringify( data ), 'utf8', function (err, data) {
-    if(err) {
-      callback(err);
-      return;
-    }
-    try {
-      callback(null, JSON.parse(data));
-    } catch(exception) {
-      callback(exception);
-    }
-  });
-}
-
-function init(){
-  readJSONFile('data.json', function(err, cont) {
-    if (err) { console.log(err);; }
-    data = cont;
-  })
-}
-
-function save(object){
-  writeToJSON('data.json', object, function(err, cont) {
-    if (err) { console.log(err); }
-    console.log('saved');
-  })
-}
-
-var data;
-init();
-
+var mysql = require("mysql");
 var express = require('express');
+var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
-var app = express();
-var path = require('path');
+var morgan = require('morgan');
+var responseTime = require('response-time');
+var compression = require('compression');
 
+var app = express();
+app.set('port', process.env.PORT || 3000);
+
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "Pocok07",
+  database : 'todos',
+});
+
+con.connect(function(err){
+  if(err){
+    console.log("Error connecting to Db");
+    return;
+  }
+  console.log("Connection established");
+});
+
+var accessLogStream = fs.createWriteStream(__dirname + '/logs/access.log', {flags: 'a'})
+logger.debug("Overriding 'Express' logger");
+
+app.use(require('morgan')({ "stream": logger.stream }));
+app.use(morgan('combined'));
+app.use(favicon(__dirname + '/views/favicon.jpg'));
 app.use(express.static(__dirname + '/views/'));
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
+app.use(responseTime());
 app.use(function (req, res, next) {
   res.contentType('application/json');
   next();
 });
+app.use(compression({filter: shouldCompress}))
 
+function shouldCompress(req, res) {
+  if (req.headers['x-no-compression']) {
+    return false
+  }
+  return compression.filter(req, res)
+}
 
 app.get('/todos', function(req, res) {
-  res.json(data.filter(function(item){ return !item.destroyed || undefined;}));
+  con.query('SELECT * FROM tasks WHERE destroyed != "true";',function(err,rows){
+    if(err) {
+      console.log(err.toString());
+      return;
+    }
+    let response = {id: rows.insertId, text:req.body.text, completed: false}
+    res.json(rows);
+  });
 });
 
-app.get('/todos/:id', function(req, res) {
-  res.json(data.filter(function(item){ return item.id === +req.params.id;}));
+app.get('/todos/:id', function(req, res, next) {
+  con.query('SELECT * FROM tasks WHERE id = ?;', req.params.id ,function(err,rows){
+    if(err || rows.length == 0) {
+      next();
+      console.log(err.toString());
+      return;
+    }
+    res.send(rows);
+  });
 });
 
 app.post('/todos', function(req, res) {
-  req.body.completed = false;
-  req.body.id = data.length + 1;
-  data.push(req.body);
-  save(data);
-  res.json(req.body);
+  let post = {text: req.body.text}
+  con.query('INSERT INTO tasks SET ?;', post,function(err,rows){
+    if(err || req.body.text === undefined) {
+      next();
+      console.log(err.toString());
+      return;
+    }
+    let response = {id: rows.insertId, text:req.body.text, completed: false}
+    res.json(response);
+  });
 })
 
 app.put('/todos/:id', function(req, res, next) {
-  let taskIndex = data.indexOf(data.filter(function(item){ return item.id === +req.params.id;})[0]);
-  if (taskIndex < 0) { return next(true); }
-  data[taskIndex].completed = req.body.completed ;
-  data[taskIndex].text = req.body.text;
-  save(data);
-  res.json(data[taskIndex]);
+  var query = 'UPDATE ?? SET ?? = ? WHERE ?? = ?';
+  var table = ["tasks", "completed", req.body.completed, "id", req.params.id];
+  query = mysql.format(query,table);
+  con.query(query ,function(err,rows){
+    if(err || rows.affectedRows == 0) {
+      next();
+      console.log(err.toString());
+      return;
+    }
+    let response = {id: req.params.id,
+                    text:req.body.text,
+                    completed: req.body.completed}
+    res.json(response);
+  });
 })
 
 app.delete('/todos/:id', function(req, res, next) {
-  let taskIndex = data.indexOf(data.filter(function(item){ return item.id === +req.params.id;})[0]);
-  if (taskIndex < 0) { return next(true); }
-  data[taskIndex].destroyed = true;
-  save(data);
-  res.json(data[taskIndex]);
+  var query = 'UPDATE tasks SET destroyed = true WHERE id = ? AND text = ?';
+  var table = [req.params.id, req.body.text];
+  query = mysql.format(query,table);
+  con.query(query ,function(err,rows){
+    if(err || rows.affectedRows == 0) {
+      next();
+      console.log(err.toString());
+      return;
+    }
+    let response = {id: req.params.id,
+                    text:req.body.text,
+                    destroyed: true,
+                    completed: req.body.completed}
+    res.json(response);
+  });
 })
 
-app.use(function(err, req, res, next) {
-   res.sendStatus(404);
+app.get('*', function(err, req, res, next){
+  res.status(404).end('Task with given ID does not exist.');
 });
 
-app.listen(3000);
+app.listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
+});

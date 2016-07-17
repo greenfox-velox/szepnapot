@@ -51,39 +51,32 @@ function appendToDo(object, parent) {
 function printTodos() {
   let todoList = document.querySelector('ul');
   todoList.className = 'todo-list';
-  if (responseObject === null) { return;}
   for (var i = 0; i < responseObject.length; i++) {
     appendToDo(responseObject[i], todoList);
   }
   app.appendChild(todoList);
 }
 
-function update(err, res) {
-  responseObject = res;
-  refreshList();
-  printTodos();
-}
-
 function getContent() {
-  xhr.open('GET', 'http://localhost:3000/todos', true);
+  xhr.open('GET', 'https://mysterious-dusk-8248.herokuapp.com/todos', true);
   xhr.responseType = 'json';
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || 201 || 202 || 304 )
         { responseObject = xhr.response;
           refreshList();
-          printTodos();;
+          printTodos();
         }
        else {
         console.log('Error: ' + xhr.status);
       }
     }
   };
-  xhr.send();
+  xhr.send(null);
 }
 
 function postContent(data) {
-  xhr.open('POST', 'http://localhost:3000/todos', true);
+  xhr.open('POST', 'https://mysterious-dusk-8248.herokuapp.com/todos', true);
   xhr.setRequestHeader("content-type",'application/json',
                       "Accept","text/html; charset=utf-8");
   xhr.onreadystatechange = function () {
@@ -96,11 +89,12 @@ function postContent(data) {
     }
   };
   xhr.send(data);
+
 }
 
 function deleteContent(id) {
-  xhr.open('DELETE', 'http://localhost:3000/todos/' + id, true);
-  xhr.setRequestHeader("content-type",'application/json');
+  xhr.open('DELETE', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + id, true);
+  xhr.setRequestHeader("Accept",'application/json');
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || 201 || 202 || 304 )
@@ -110,11 +104,11 @@ function deleteContent(id) {
       }
     }
   };
-  xhr.send();
+  xhr.send(null);
 }
 
 function completeTask(object, id) {
-  xhr.open('PUT', 'http://localhost:3000/todos/' + id, true);
+  xhr.open('PUT', 'https://mysterious-dusk-8248.herokuapp.com/todos/' + id, true);
   xhr.setRequestHeader("content-type",'application/json');
   xhr.send(JSON.stringify(object));
   xhr.onreadystatechange = function () {
@@ -141,6 +135,7 @@ function completeTodo(event) {
   let targetTask = event.currentTarget.parentNode.parentNode;
   taskToComplete.id = targetTask.className;
   taskToComplete.text = targetTask.textContent;
+  console.log(event.currentTarget.checked);
   taskToComplete.completed = event.currentTarget.checked;
   completeTask(taskToComplete, taskToComplete.id);
 }
@@ -153,7 +148,6 @@ function addTodo(event) {
   form.reset();
   let task = {};
   task.text = taskToAdd;
-  task.completed = 'false';
   postContent(JSON.stringify(task));
 
 }
@@ -161,3 +155,7 @@ function addTodo(event) {
 getContent();
 
 addButton.addEventListener('click', addTodo);
+
+setTimeout(function(){
+   getContent();
+}, 10000);

@@ -1,14 +1,24 @@
+$body-color: #50e3c2;
+$todo-color: #f7f7f7;
+$button-color: #ffffff;
+$todoText-color: #ABABAB;
+$pink: #df69e8;
+
+$font: Lato, sans-serif;
+$fontSize-heading: 64px;
+$fontSize-todo: 26px;
+
 body {
-  background: #50e3c2;
+  background: $body-color;
 }
 
 .container {
   margin: 50px auto;
   width: 450px;
-  background: #f7f7f7;
-  color: #ABABAB;
-  font-family: Lato, sans-serif;
-  box-shadow: 0px 0px 107px 8px #f50cd2;
+  background: $todo-color;
+  color: $todoText-color;
+  font-family: $font;
+  box-shadow: 0px 0px 107px 8px rgba(245,12,210,1);
 }
 
 .app {
@@ -20,7 +30,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 64px;
+  font-size: $fontSize-heading;
   font-weight: 300;
   padding: 30px 0;
   margin: 0;
@@ -41,15 +51,15 @@ button {
 
 button {
   border: none;
-  font-size: 26px;
-  background: #df69e8;
+  font-size: $fontSize-todo;
+  background: $pink;
   color: white;
   width: 20%;
 }
 
 ul {
-  font: Lato, sans-serif;
-  color: #ABABAB;
+  font: $font;
+  color: $todoText-color;
   list-style-type: none;
   padding: 0 0 40px 0;
   line-height: 2.2em;
@@ -62,7 +72,7 @@ li {
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
-  font-size: 26px;
+  font-size: $fontSize-todo;
   max-height: 70px;
 }
 
@@ -70,7 +80,8 @@ li {
   color: gainsboro;
 }
 
-span:hover {
+span:hover
+{
   background: pink;
 }
 
@@ -86,7 +97,7 @@ span:hover {
 }
 
 .option-delete {
-  background: url("bin.png") no-repeat center;
+  background: url('bin.png') no-repeat center ;
 }
 
 .option-delete:hover {
