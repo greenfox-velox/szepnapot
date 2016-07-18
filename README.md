@@ -11,7 +11,7 @@ ___
 
 ## Navigation
 
-[Syllabus](https://github.com/szepnapot/velox-syllabus "fork")
+[Syllabus](https://github.com/szepnapot/velox-syllabus/blob/master/README.md "fork")
 
 [Week 1](#week-1)
 
