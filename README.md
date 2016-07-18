@@ -1,4 +1,4 @@
-# Peter Lodri
+# [Peter Lodri](https://www.linkedin.com/in/peter-lodri-89a2a5113?trk=hp-identity-photo)
 
 ___
 
