@@ -8,13 +8,10 @@ ___
 </p>
 
 
-## Velox class 
-
-
-[**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
 
 ## Navigation
 
+[Syllabus](https://github.com/szepnapot/velox-syllabus "fork")
 
 [Week 1](#week-1)
 
