@@ -1,10 +1,14 @@
-# [Peter Lodri](https://www.linkedin.com/in/peter-lodri-89a2a5113?trk=hp-identity-photo)
+<h1 align="center"><a href="https://tinyurl.com/z86gcj4">Peter Lodri</a></h1>
 
 ___
 
-# [GreenFox Academy](http://www.greenfoxacademy.com/) ![Green Fox logo](https://tinyurl.com/hgzse3j "Logo")
-## Velox class 
+<h1 align="center"><a href="http://www.greenfoxacademy.com/">GreenFox Academy</a></h1>
+<p align="center">
+  <img src="https://tinyurl.com/hgzse3j" height="100px">
+</p>
 
+
+## Velox class 
 
 
 [**Syllabus**](https://github.com/szepnapot/velox-syllabus "fork")
