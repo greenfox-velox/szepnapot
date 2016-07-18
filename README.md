@@ -33,7 +33,7 @@ ___
 ### Student presentations I've done so far:
 
 * [Character encodings](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/encoding_presentation.odt)
-* RegEx
+* RegExp
   * [Presentation](https://docs.google.com/presentation/d/1rSTxrgypsfQBBjR67x0NfV_KKyiN7quVCnTP3us1A54/edit?usp=sharing)
   * [Python example](https://github.com/greenfox-velox/szepnapot/tree/master/student_presentations/regex_example)
 * JSON
@@ -41,6 +41,11 @@ ___
   * [Python example](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/json_example.py)
 * Functional Python
   * [Map, filter, lambda, list comprehension examples](https://github.com/greenfox-velox/szepnapot/blob/master/student_presentations/functional_examples.py)
+* Javascript RegExp
+  * [Slides](https://docs.google.com/presentation/d/1VEB1NX9cvDCLufrzMT30beNhMBy6dr27QmLXsF5FHV4/edit)
+  * [Codewars example done with class](https://www.codewars.com/kata/regex-password-validation/train/javascript)
+* jQuery
+  * [Slides](https://docs.google.com/presentation/d/1Ivu6o3OVnzz6NM5Y9JhRrgHIqQ9Vabf02Ho5eE15wyg/edit)
 
 ___
 
@@ -54,6 +59,7 @@ ___
 * [Week 5](https://docs.google.com/presentation/d/1LRLqYruv31fHqmOK1UvPdF6ZRFnvBhkEtzrxsZAQPyU/edit)
 * [Week 6](https://docs.google.com/presentation/d/1HWVIaXus-a4KwcDxbUPyAJgPQiipzBCILcuBkmyawxM/edit)
 * [Week 7](https://docs.google.com/presentation/d/1G6gCN6ngTN3lB3InKD7iLmwI9IMo5K-8fOTwOnmK0G8/edit)
+* [Week 9](https://docs.google.com/presentation/d/13zGUL_sxZXJqvuw3fYFTK2o3jT2QVwCjD1SkSqiJqCE/edit)
 
 
 ___
