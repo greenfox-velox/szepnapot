@@ -31,6 +31,8 @@ ___
 
 [Week 9](#week-9)
 
+[Week 10](#week-10)
+
 ___
 
 ### Student presentations I've done so far:
@@ -322,6 +324,26 @@ ___
 ### Create an API and working database for previous Todo application.
 
 [Source code](https://github.com/greenfox-velox/szepnapot/tree/master/week-09/todo_app)
+
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
+
+___
+
+## [Week 10](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-10)
+
+<p align="center">
+  <img src="https://github.com/szepnapot/calorieCounter/blob/master/calorieCounter.png" alt="CalorieCounter" height=400px>
+</p>
+
+* Tested
+  * API
+  * method for AJAX request
+
+<p align="center">
+  <a href="https://github.com/szepnapot/calorieCounter">Project repository</a>
+</p>
 
 <p align="right">
  <a href="#navigation">back to top</a>
