@@ -29,6 +29,8 @@ ___
 
 [Week 8](#week-8)
 
+[Week 9](#week-9)
+
 ___
 
 ### Student presentations I've done so far:
@@ -285,14 +287,41 @@ ___
 
 ## Week 8
 
-[**Week 8 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-08)
-
 <p align="center">
   <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-08/4-access-backend/todo-project/todo_preview.png" alt="Gallery preview" height=400px>
 </p>
 
+
+[**Week 8 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-08)
+
+<p align="center">
+  <a href="https://szepnapot.github.io/todo/index.html">Todo App</a>
+</p>
+
+<p align="center">
+  <a href="https://szepnapot.github.io/candy/candy.html">Candy Game</a>
+</p>
+
 ### Programs created this week:
 
+* [TDD exercises](https://github.com/greenfox-velox/szepnapot/tree/master/week-08/1-TDD)
+* [Async exercises](https://github.com/greenfox-velox/szepnapot/tree/master/week-08/3-async)
+* [Candy game source](https://github.com/greenfox-velox/szepnapot/tree/master/week-08/3-async/candy)
+* [Todo frontend with given API](https://github.com/greenfox-velox/szepnapot/tree/master/week-08/4-access-backend/todo-project)
+
+
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
+
+___
+
+## [Week 9](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-09)
+
+### Full stack project
+### Create an API and working database for previous Todo application.
+
+[Source code](https://github.com/greenfox-velox/szepnapot/tree/master/week-09/todo_app)
 
 <p align="right">
  <a href="#navigation">back to top</a>
