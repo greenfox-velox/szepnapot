@@ -65,14 +65,13 @@ ___
 * [Week 6](https://docs.google.com/presentation/d/1HWVIaXus-a4KwcDxbUPyAJgPQiipzBCILcuBkmyawxM/edit)
 * [Week 7](https://docs.google.com/presentation/d/1G6gCN6ngTN3lB3InKD7iLmwI9IMo5K-8fOTwOnmK0G8/edit)
 * [Week 9](https://docs.google.com/presentation/d/13zGUL_sxZXJqvuw3fYFTK2o3jT2QVwCjD1SkSqiJqCE/edit)
+* [Week 10](https://docs.google.com/presentation/d/13DVzNCM7i77gR8TgxIGreivp7o6fj0if6SnGMfOOqlc/edit?usp=sharing)
 
 
 ___
 
 
-## Week 1
-
-[**week 1 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-01)
+## [Week 1](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-01)
 
 *Project: Build a CV page*
 
@@ -112,9 +111,7 @@ ___
 </p>
 ___
 
-## Week 2:
-
-[**week 2 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02)  
+## [Week 2](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-02)
 
 *Project: Build two Wikipedia Pages*
 
@@ -148,9 +145,7 @@ ___
 </p>
 ___
 
-## Week 3
-
-[**week 3 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-03)
+## [Week 3](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-03)
 
 ### Programs created this week:
 
@@ -173,9 +168,7 @@ ___
 </p>
 ___
 
-## Week 4
-
-[**week 4 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-04)
+## [Week 4](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-04)
 
 ### Overview about the week:
 
@@ -209,9 +202,7 @@ ___
 </p>
 ___
 
-## Week 5
-
-[**Week 5 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-05)
+## [Week 5](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-05)
 
 ### Overview about the week:
 
@@ -237,9 +228,7 @@ ___
 </p>
 ___
 
-## Week 6
-
-[**Week 6 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-06)
+## [Week 6](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-06)
 
 <p align="center">
   <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-06/tkwanderer/tkwanderer.png" alt="Gameplay picture" height=400px>
@@ -260,9 +249,7 @@ ___
 </p>
 ___
 
-## Week 7
-
-[**Week 7 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-07)
+## [Week 7](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-07)
 
 <p align="center">
   <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-07/gallery-project/gallery_snapshot.png" alt="Gallery preview" height=400px>
@@ -287,14 +274,11 @@ ___
 </p>
 ___
 
-## Week 8
+## [Week 8](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-08)
 
 <p align="center">
   <img src="https://github.com/greenfox-velox/szepnapot/blob/master/week-08/4-access-backend/todo-project/todo_preview.png" alt="Gallery preview" height=400px>
 </p>
-
-
-[**Week 8 syllabus**](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-08)
 
 <p align="center">
   <a href="https://szepnapot.github.io/todo/index.html">Todo App</a>
