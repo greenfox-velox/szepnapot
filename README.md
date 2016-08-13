@@ -33,6 +33,10 @@ ___
 
 [Week 10](#week-10)
 
+[Week 11](#week-11)
+
+[Week 12](#week-12)
+
 ___
 
 ### Student presentations I've done so far:
@@ -51,6 +55,8 @@ ___
   * [Codewars example done with class](https://www.codewars.com/kata/regex-password-validation/train/javascript)
 * jQuery
   * [Slides](https://docs.google.com/presentation/d/1Ivu6o3OVnzz6NM5Y9JhRrgHIqQ9Vabf02Ho5eE15wyg/edit)
+* Closures
+  * [Sprite + JS example](#)
 
 ___
 
@@ -66,6 +72,9 @@ ___
 * [Week 7](https://docs.google.com/presentation/d/1G6gCN6ngTN3lB3InKD7iLmwI9IMo5K-8fOTwOnmK0G8/edit)
 * [Week 9](https://docs.google.com/presentation/d/13zGUL_sxZXJqvuw3fYFTK2o3jT2QVwCjD1SkSqiJqCE/edit)
 * [Week 10](https://docs.google.com/presentation/d/13DVzNCM7i77gR8TgxIGreivp7o6fj0if6SnGMfOOqlc/edit?usp=sharing)
+* [Week 11](https://docs.google.com/presentation/d/1vUm5BxbGAWwzUTN3FaaY5hVHsfuE3lDFoNBjvHEqSqQ/edit)
+* [Week 12](https://docs.google.com/presentation/d/1vUBFnRlWPNNkdeoecSq0vLBhj5h8JyYdieYamoN_NOU/edit)
+
 
 
 ___
@@ -334,6 +343,34 @@ ___
 </p>
 
 ___
+
+## [Week 11](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-11)
+
+### First week with team Emerald, we've got a JAVA project. The goal for this week was to redo previous week's Calori Counter in our current stack, Java + Spring.
+
+### [Source](https://github.com/szepnapot/emerald_heroku)
+### [Demo slides](https://docs.google.com/presentation/d/1vUm5BxbGAWwzUTN3FaaY5hVHsfuE3lDFoNBjvHEqSqQ/edit)
+
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
+
+___
+
+## [Week 12](https://github.com/greenfox-velox/velox-syllabus/tree/master/week-12)
+
+### Started to work on our 'real' project which is to create a Hr application in Java. Organizing the work, making our infrastructure (Git, Codeship, Heroku, Trello), finish the first sprint. Was a succesfull week, our registration/login/session handling/database is working.
+
+### [HrSystem repo](https://github.com/greenfox-velox/emerald-hr-system)
+### [Demo slides](https://docs.google.com/presentation/d/1vUBFnRlWPNNkdeoecSq0vLBhj5h8JyYdieYamoN_NOU/edit)
+
+<p align="right">
+ <a href="#navigation">back to top</a>
+</p>
+
+___
+
+
 
 <p align="center">
   <a href="https://medium.com/@pocok" target="_blank">
